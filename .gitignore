@@ -1,8 +1,8 @@
 # Project special
 /origins/*/
-/dataset/*.tsv
-/logs/*.log
-/checkpoint/*.tsv
+/dataset/
+/logs1/
+/checkpoint/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
