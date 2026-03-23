@@ -7,5 +7,5 @@ rm 3Mmeta_en.zip
 
 curl -L -o 41Kmeta_en.zip\
   https://www.kaggle.com/api/v1/datasets/download/neelshah18/arxivdataset
-unzip 24Kmeta_en.zip -d ./41Kmeta_en
+unzip 41Kmeta_en.zip -d ./41Kmeta_en
 rm 41Kmeta_en.zip

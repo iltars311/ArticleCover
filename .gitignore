@@ -1,2 +1,4 @@
 /origins/*/
-/dataset/*.tsv
+/dataset/clean.tsv
+/logs/*.log
+/checkpoint/*.tsv
