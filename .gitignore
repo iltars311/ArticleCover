@@ -1,6 +1,6 @@
 # Project special
 /origins/*/
-# /dataset/*.tsv
+/dataset/*.tsv
 /logs/*.log
 /checkpoint/*.tsv
 
