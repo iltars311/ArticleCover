@@ -1,0 +1,7 @@
+
+2026-03-23 18:33:15,338 - __main__.Teacher - INFO - ======================= New session =======================
+2026-03-23 18:33:15,339 - __main__.Teacher - DEBUG - Debug mode is ON
+2026-03-23 18:33:15,393 - __main__.Teacher - INFO - Teacher initialized with model=deepseek-chat, temp=0.7, n=3
+2026-03-23 18:34:15,772 - __main__.Teacher - INFO - ======================= New session =======================
+2026-03-23 18:34:15,772 - __main__.Teacher - DEBUG - Debug mode is ON
+2026-03-23 18:34:15,772 - __main__.Teacher - INFO - Teacher initialized with model='deepseek-chat', temp=0.7, n=3
