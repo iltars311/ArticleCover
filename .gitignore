@@ -150,36 +150,3 @@ cython_debug/
 *.swo
 *~
 .DS_Store
-
-# Project specific (для вашего Teacher проекта)
-# Logs
-logs/
-*.log
-../logs/
-
-# Checkpoints
-checkpoint/
-*.checkpoint.tsv
-teacher_check.tsv
-*.checkpoint
-
-# Dataset outputs
-dataset/prompts.tsv
-*.tsv
-!*.tsv  # если нужно исключить какие-то .tsv файлы
-
-# API keys
-*_key.py
-*_secret.py
-config_local.py
-
-# Backup files
-backup/
-*.bak
-*.backup
-
-# Temporary files
-tmp/
-temp/
-*.tmp
-*.temp
