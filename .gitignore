@@ -1,8 +1,6 @@
 # Project special
 /origins/*/
-/dataset/
-/logs1/
-/checkpoint/
+/checkpoint/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -58,7 +56,6 @@ cover/
 *.pot
 
 # Django stuff:
-*.log
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
@@ -79,7 +76,6 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
-*.ipynb
 */.ipynb_checkpoints/*
 
 # IPython
