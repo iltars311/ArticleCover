@@ -1,0 +1,892 @@
+2026-03-24 00:33:25,364 - __main__.Teacher - INFO - ======================= New session =======================
+2026-03-24 00:33:25,364 - __main__.Teacher - INFO - Teacher initialized with model='deepseek-chat', temp=0.7, n=2
+2026-03-24 00:33:26,304 - __main__.Teacher - INFO - Starting processing articles from index 0
+2026-03-24 00:35:59,418 - __main__.Teacher - INFO - Starting processing articles from index 0
+2026-03-24 00:36:57,186 - __main__.Teacher - INFO - Saved checkpoint for 17 articles (0:17)
+2026-03-24 00:37:59,113 - __main__.Teacher - INFO - Saved checkpoint for 5 articles (17:22)
+2026-03-24 00:38:57,219 - __main__.Teacher - INFO - Saved checkpoint for 5 articles (22:27)
+2026-03-24 00:45:16,417 - __main__.Teacher - INFO - ======================= New session =======================
+2026-03-24 00:45:16,417 - __main__.Teacher - DEBUG - Debug mode is ON
+2026-03-24 00:45:16,417 - __main__.Teacher - INFO - Teacher initialized with model='deepseek-chat', temp=0.7, n=2
+2026-03-24 00:45:17,272 - __main__.Teacher - INFO - Starting processing articles from index 0
+2026-03-24 00:45:17,274 - __main__.Teacher - DEBUG - Processing 1/4914: 1712.07512v1
+2026-03-24 00:45:17,274 - __main__.Teacher - DEBUG - Article: id=1712.07512v1, title_len=72, abstract_len=839
+2026-03-24 00:45:17,274 - __main__.Teacher - DEBUG - Prepared messages for 1712.07512v1. System length: 1491, user length: 953
+2026-03-24 00:45:24,124 - __main__.Teacher - INFO - Starting processing articles from index 0
+2026-03-24 00:45:24,127 - __main__.Teacher - DEBUG - Processing 1/4914: 1712.07512v1
+2026-03-24 00:45:24,127 - __main__.Teacher - DEBUG - Article: id=1712.07512v1, title_len=72, abstract_len=839
+2026-03-24 00:45:24,127 - __main__.Teacher - DEBUG - Prepared messages for 1712.07512v1. System length: 1491, user length: 953
+2026-03-24 00:45:37,280 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:45:37,280 - __main__.Teacher - DEBUG - Stats. Curr: 465 + 299 = 764 (0.00025578000000000005), total_in_tokens: 465, total_out_tokens: 299, total_cost: 0.00025578000000000005
+2026-03-24 00:45:37,285 - __main__.Teacher - DEBUG - Processing 2/4914: 1410.6095v1
+2026-03-24 00:45:37,285 - __main__.Teacher - DEBUG - Article: id=1410.6095v1, title_len=73, abstract_len=1095
+2026-03-24 00:45:37,285 - __main__.Teacher - DEBUG - Prepared messages for 1410.6095v1. System length: 1491, user length: 1210
+2026-03-24 00:45:49,940 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:45:49,940 - __main__.Teacher - DEBUG - Stats. Curr: 514 + 300 = 814 (0.00026992), total_in_tokens: 979, total_out_tokens: 599, total_cost: 0.0005257
+2026-03-24 00:45:49,945 - __main__.Teacher - INFO - Saved checkpoint for 2 articles (0:2)
+2026-03-24 00:45:49,946 - __main__.Teacher - DEBUG - Processing 3/4914: cs/0610041v1
+2026-03-24 00:45:49,946 - __main__.Teacher - DEBUG - Article: id=cs/0610041v1, title_len=73, abstract_len=447
+2026-03-24 00:45:49,946 - __main__.Teacher - DEBUG - Prepared messages for cs/0610041v1. System length: 1491, user length: 562
+2026-03-24 00:46:00,016 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:46:00,017 - __main__.Teacher - DEBUG - Stats. Curr: 396 + 225 = 621 (0.00020538), total_in_tokens: 1375, total_out_tokens: 824, total_cost: 0.0007310800000000001
+2026-03-24 00:46:00,020 - __main__.Teacher - DEBUG - Processing 4/4914: 1701.03974v2
+2026-03-24 00:46:00,020 - __main__.Teacher - DEBUG - Article: id=1701.03974v2, title_len=77, abstract_len=1493
+2026-03-24 00:46:00,020 - __main__.Teacher - DEBUG - Prepared messages for 1701.03974v2. System length: 1491, user length: 1612
+2026-03-24 00:46:11,065 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:46:11,065 - __main__.Teacher - DEBUG - Stats. Curr: 585 + 246 = 831 (0.00026712000000000003), total_in_tokens: 1960, total_out_tokens: 1070, total_cost: 0.0009982
+2026-03-24 00:46:11,068 - __main__.Teacher - INFO - Saved checkpoint for 2 articles (2:4)
+2026-03-24 00:46:11,069 - __main__.Teacher - DEBUG - Processing 5/4914: cmp-lg/9405020v2
+2026-03-24 00:46:11,069 - __main__.Teacher - DEBUG - Article: id=cmp-lg/9405020v2, title_len=43, abstract_len=427
+2026-03-24 00:46:11,070 - __main__.Teacher - DEBUG - Prepared messages for cmp-lg/9405020v2. System length: 1491, user length: 512
+2026-03-24 00:46:24,858 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:46:24,858 - __main__.Teacher - DEBUG - Stats. Curr: 412 + 300 = 712 (0.00024136), total_in_tokens: 2372, total_out_tokens: 1370, total_cost: 0.00123956
+2026-03-24 00:46:24,864 - __main__.Teacher - DEBUG - Processing 6/4914: cs/9701101v1
+2026-03-24 00:46:24,864 - __main__.Teacher - DEBUG - Article: id=cs/9701101v1, title_len=41, abstract_len=946
+2026-03-24 00:46:24,864 - __main__.Teacher - DEBUG - Prepared messages for cs/9701101v1. System length: 1491, user length: 1029
+2026-03-24 00:46:35,503 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:46:35,503 - __main__.Teacher - DEBUG - Stats. Curr: 469 + 240 = 709 (0.00023212), total_in_tokens: 2841, total_out_tokens: 1610, total_cost: 0.00147168
+2026-03-24 00:46:35,506 - __main__.Teacher - INFO - Saved checkpoint for 2 articles (4:6)
+2026-03-24 00:46:35,507 - __main__.Teacher - DEBUG - Processing 7/4914: 1802.03793v1
+2026-03-24 00:46:35,508 - __main__.Teacher - DEBUG - Article: id=1802.03793v1, title_len=80, abstract_len=1300
+2026-03-24 00:46:35,508 - __main__.Teacher - DEBUG - Prepared messages for 1802.03793v1. System length: 1491, user length: 1422
+2026-03-24 00:46:48,559 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:46:48,559 - __main__.Teacher - DEBUG - Stats. Curr: 563 + 274 = 837 (0.00027272), total_in_tokens: 3404, total_out_tokens: 1884, total_cost: 0.0017444
+2026-03-24 00:46:48,563 - __main__.Teacher - DEBUG - Processing 8/4914: 1608.06315v1
+2026-03-24 00:46:48,563 - __main__.Teacher - DEBUG - Article: id=1608.06315v1, title_len=52, abstract_len=823
+2026-03-24 00:46:48,564 - __main__.Teacher - DEBUG - Prepared messages for 1608.06315v1. System length: 1491, user length: 917
+2026-03-24 00:47:01,725 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:47:01,725 - __main__.Teacher - DEBUG - Stats. Curr: 469 + 300 = 769 (0.00025732000000000006), total_in_tokens: 3873, total_out_tokens: 2184, total_cost: 0.00200172
+2026-03-24 00:47:01,729 - __main__.Teacher - INFO - Saved checkpoint for 2 articles (6:8)
+2026-03-24 00:47:01,730 - __main__.Teacher - DEBUG - Processing 9/4914: 1212.1180v1
+2026-03-24 00:47:01,731 - __main__.Teacher - DEBUG - Article: id=1212.1180v1, title_len=42, abstract_len=962
+2026-03-24 00:47:01,731 - __main__.Teacher - DEBUG - Prepared messages for 1212.1180v1. System length: 1491, user length: 1046
+2026-03-24 00:47:14,032 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:47:14,032 - __main__.Teacher - DEBUG - Stats. Curr: 477 + 300 = 777 (0.00025956), total_in_tokens: 4350, total_out_tokens: 2484, total_cost: 0.0022612799999999996
+2026-03-24 00:47:14,035 - __main__.Teacher - DEBUG - Processing 10/4914: 1603.03149v1
+2026-03-24 00:47:14,035 - __main__.Teacher - DEBUG - Article: id=1603.03149v1, title_len=87, abstract_len=1388
+2026-03-24 00:47:14,035 - __main__.Teacher - DEBUG - Prepared messages for 1603.03149v1. System length: 1491, user length: 1517
+2026-03-24 00:47:25,651 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:47:25,652 - __main__.Teacher - DEBUG - Stats. Curr: 549 + 300 = 849 (0.00027972), total_in_tokens: 4899, total_out_tokens: 2784, total_cost: 0.002541
+2026-03-24 00:47:25,656 - __main__.Teacher - INFO - Saved checkpoint for 2 articles (8:10)
+2026-03-24 00:47:25,658 - __main__.Teacher - DEBUG - Processing 11/4914: 1506.02344v2
+2026-03-24 00:47:25,658 - __main__.Teacher - DEBUG - Article: id=1506.02344v2, title_len=35, abstract_len=1069
+2026-03-24 00:47:25,658 - __main__.Teacher - DEBUG - Prepared messages for 1506.02344v2. System length: 1491, user length: 1146
+2026-03-24 00:47:35,494 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:47:35,495 - __main__.Teacher - DEBUG - Stats. Curr: 500 + 219 = 719 (0.00023197999999999998), total_in_tokens: 5399, total_out_tokens: 3003, total_cost: 0.00277298
+2026-03-24 00:47:35,499 - __main__.Teacher - DEBUG - Processing 12/4914: cs/0201024v1
+2026-03-24 00:47:35,499 - __main__.Teacher - DEBUG - Article: id=cs/0201024v1, title_len=73, abstract_len=873
+2026-03-24 00:47:35,499 - __main__.Teacher - DEBUG - Prepared messages for cs/0201024v1. System length: 1491, user length: 988
+2026-03-24 00:47:47,568 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:47:47,568 - __main__.Teacher - DEBUG - Stats. Curr: 469 + 295 = 764 (0.00025522), total_in_tokens: 5868, total_out_tokens: 3298, total_cost: 0.0030282
+2026-03-24 00:47:47,574 - __main__.Teacher - INFO - Saved checkpoint for 2 articles (10:12)
+2026-03-24 00:47:47,576 - __main__.Teacher - DEBUG - Processing 13/4914: 1711.04069v1
+2026-03-24 00:47:47,576 - __main__.Teacher - DEBUG - Article: id=1711.04069v1, title_len=83, abstract_len=784
+2026-03-24 00:47:47,576 - __main__.Teacher - DEBUG - Prepared messages for 1711.04069v1. System length: 1491, user length: 909
+2026-03-24 00:47:59,845 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:47:59,845 - __main__.Teacher - DEBUG - Stats. Curr: 450 + 300 = 750 (0.000252), total_in_tokens: 6318, total_out_tokens: 3598, total_cost: 0.0032802
+2026-03-24 00:47:59,849 - __main__.Teacher - DEBUG - Processing 14/4914: 1306.2727v1
+2026-03-24 00:47:59,850 - __main__.Teacher - DEBUG - Article: id=1306.2727v1, title_len=52, abstract_len=1319
+2026-03-24 00:47:59,850 - __main__.Teacher - DEBUG - Prepared messages for 1306.2727v1. System length: 1491, user length: 1413
+2026-03-24 00:48:11,166 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:48:11,166 - __main__.Teacher - DEBUG - Stats. Curr: 544 + 265 = 809 (0.00026362), total_in_tokens: 6862, total_out_tokens: 3863, total_cost: 0.00354382
+2026-03-24 00:48:11,170 - __main__.Teacher - INFO - Saved checkpoint for 2 articles (12:14)
+2026-03-24 00:48:11,171 - __main__.Teacher - DEBUG - Processing 15/4914: 1803.00952v1
+2026-03-24 00:48:11,172 - __main__.Teacher - DEBUG - Article: id=1803.00952v1, title_len=57, abstract_len=809
+2026-03-24 00:48:11,172 - __main__.Teacher - DEBUG - Prepared messages for 1803.00952v1. System length: 1491, user length: 908
+2026-03-24 00:48:23,043 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:48:23,044 - __main__.Teacher - DEBUG - Stats. Curr: 462 + 300 = 762 (0.00025536), total_in_tokens: 7324, total_out_tokens: 4163, total_cost: 0.00379918
+2026-03-24 00:48:23,048 - __main__.Teacher - DEBUG - Processing 16/4914: 0906.3722v1
+2026-03-24 00:48:23,048 - __main__.Teacher - DEBUG - Article: id=0906.3722v1, title_len=76, abstract_len=733
+2026-03-24 00:48:23,049 - __main__.Teacher - DEBUG - Prepared messages for 0906.3722v1. System length: 1491, user length: 851
+2026-03-24 00:48:35,036 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:48:35,036 - __main__.Teacher - DEBUG - Stats. Curr: 463 + 300 = 763 (0.00025564), total_in_tokens: 7787, total_out_tokens: 4463, total_cost: 0.00405482
+2026-03-24 00:48:35,065 - __main__.Teacher - INFO - Saved checkpoint for 2 articles (14:16)
+2026-03-24 00:48:35,067 - __main__.Teacher - DEBUG - Processing 17/4914: 1709.02940v1
+2026-03-24 00:48:35,068 - __main__.Teacher - DEBUG - Article: id=1709.02940v1, title_len=51, abstract_len=1123
+2026-03-24 00:48:35,068 - __main__.Teacher - DEBUG - Prepared messages for 1709.02940v1. System length: 1491, user length: 1216
+2026-03-24 00:48:46,595 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:48:46,595 - __main__.Teacher - DEBUG - Stats. Curr: 534 + 264 = 798 (0.0002604), total_in_tokens: 8321, total_out_tokens: 4727, total_cost: 0.00431522
+2026-03-24 00:48:46,599 - __main__.Teacher - DEBUG - Processing 18/4914: 1303.3067v1
+2026-03-24 00:48:46,599 - __main__.Teacher - DEBUG - Article: id=1303.3067v1, title_len=40, abstract_len=864
+2026-03-24 00:48:46,599 - __main__.Teacher - DEBUG - Prepared messages for 1303.3067v1. System length: 1491, user length: 946
+2026-03-24 00:48:57,962 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:48:57,962 - __main__.Teacher - DEBUG - Stats. Curr: 479 + 275 = 754 (0.00024962), total_in_tokens: 8800, total_out_tokens: 5002, total_cost: 0.00456484
+2026-03-24 00:48:57,968 - __main__.Teacher - INFO - Saved checkpoint for 2 articles (16:18)
+2026-03-24 00:48:57,969 - __main__.Teacher - DEBUG - Processing 19/4914: 1512.05702v2
+2026-03-24 00:48:57,970 - __main__.Teacher - DEBUG - Article: id=1512.05702v2, title_len=70, abstract_len=846
+2026-03-24 00:48:57,970 - __main__.Teacher - DEBUG - Prepared messages for 1512.05702v2. System length: 1491, user length: 958
+2026-03-24 00:49:08,728 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:49:08,728 - __main__.Teacher - DEBUG - Stats. Curr: 456 + 252 = 708 (0.00023351999999999997), total_in_tokens: 9256, total_out_tokens: 5254, total_cost: 0.00479836
+2026-03-24 00:49:08,732 - __main__.Teacher - DEBUG - Processing 20/4914: 1408.6032v1
+2026-03-24 00:49:08,732 - __main__.Teacher - DEBUG - Article: id=1408.6032v1, title_len=60, abstract_len=1473
+2026-03-24 00:49:08,732 - __main__.Teacher - DEBUG - Prepared messages for 1408.6032v1. System length: 1491, user length: 1575
+2026-03-24 00:49:20,317 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:49:20,317 - __main__.Teacher - DEBUG - Stats. Curr: 556 + 300 = 856 (0.00028168000000000003), total_in_tokens: 9812, total_out_tokens: 5554, total_cost: 0.00508004
+2026-03-24 00:49:20,323 - __main__.Teacher - INFO - Saved checkpoint for 2 articles (18:20)
+2026-03-24 00:49:20,324 - __main__.Teacher - DEBUG - Processing 21/4914: 0712.0836v1
+2026-03-24 00:49:20,324 - __main__.Teacher - DEBUG - Article: id=0712.0836v1, title_len=62, abstract_len=1020
+2026-03-24 00:49:20,324 - __main__.Teacher - DEBUG - Prepared messages for 0712.0836v1. System length: 1491, user length: 1124
+2026-03-24 00:49:32,598 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:49:32,598 - __main__.Teacher - DEBUG - Stats. Curr: 484 + 300 = 784 (0.00026152), total_in_tokens: 10296, total_out_tokens: 5854, total_cost: 0.00534156
+2026-03-24 00:49:32,601 - __main__.Teacher - DEBUG - Processing 22/4914: 1508.03040v6
+2026-03-24 00:49:32,602 - __main__.Teacher - DEBUG - Article: id=1508.03040v6, title_len=40, abstract_len=919
+2026-03-24 00:49:32,602 - __main__.Teacher - DEBUG - Prepared messages for 1508.03040v6. System length: 1491, user length: 1001
+2026-03-24 00:49:44,593 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:49:44,593 - __main__.Teacher - DEBUG - Stats. Curr: 475 + 295 = 770 (0.00025689999999999996), total_in_tokens: 10771, total_out_tokens: 6149, total_cost: 0.00559846
+2026-03-24 00:49:44,597 - __main__.Teacher - INFO - Saved checkpoint for 2 articles (20:22)
+2026-03-24 00:49:44,598 - __main__.Teacher - DEBUG - Processing 23/4914: 1707.09067v1
+2026-03-24 00:49:44,598 - __main__.Teacher - DEBUG - Article: id=1707.09067v1, title_len=48, abstract_len=790
+2026-03-24 00:49:44,599 - __main__.Teacher - DEBUG - Prepared messages for 1707.09067v1. System length: 1491, user length: 880
+2026-03-24 00:49:56,663 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:49:56,663 - __main__.Teacher - DEBUG - Stats. Curr: 463 + 300 = 763 (0.00025564), total_in_tokens: 11234, total_out_tokens: 6449, total_cost: 0.0058541
+2026-03-24 00:49:56,668 - __main__.Teacher - DEBUG - Processing 24/4914: 1710.11277v2
+2026-03-24 00:49:56,668 - __main__.Teacher - DEBUG - Article: id=1710.11277v2, title_len=85, abstract_len=758
+2026-03-24 00:49:56,668 - __main__.Teacher - DEBUG - Prepared messages for 1710.11277v2. System length: 1491, user length: 885
+2026-03-24 00:50:09,597 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:50:09,597 - __main__.Teacher - DEBUG - Stats. Curr: 460 + 300 = 760 (0.0002548), total_in_tokens: 11694, total_out_tokens: 6749, total_cost: 0.0061089000000000004
+2026-03-24 00:50:09,603 - __main__.Teacher - INFO - Saved checkpoint for 2 articles (22:24)
+2026-03-24 00:50:09,604 - __main__.Teacher - DEBUG - Processing 25/4914: cs/0007032v1
+2026-03-24 00:50:09,604 - __main__.Teacher - DEBUG - Article: id=cs/0007032v1, title_len=28, abstract_len=564
+2026-03-24 00:50:09,604 - __main__.Teacher - DEBUG - Prepared messages for cs/0007032v1. System length: 1491, user length: 634
+2026-03-24 00:50:22,323 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:50:22,323 - __main__.Teacher - DEBUG - Stats. Curr: 410 + 300 = 710 (0.0002408), total_in_tokens: 12104, total_out_tokens: 7049, total_cost: 0.006349700000000001
+2026-03-24 00:50:22,327 - __main__.Teacher - DEBUG - Processing 26/4914: 1109.6838v1
+2026-03-24 00:50:22,328 - __main__.Teacher - DEBUG - Article: id=1109.6838v1, title_len=60, abstract_len=1241
+2026-03-24 00:50:22,328 - __main__.Teacher - DEBUG - Prepared messages for 1109.6838v1. System length: 1491, user length: 1343
+2026-03-24 00:50:33,769 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:50:33,769 - __main__.Teacher - DEBUG - Stats. Curr: 537 + 266 = 803 (0.00026208000000000004), total_in_tokens: 12641, total_out_tokens: 7315, total_cost: 0.006611780000000001
+2026-03-24 00:50:33,771 - __main__.Teacher - INFO - Saved checkpoint for 2 articles (24:26)
+2026-03-24 00:50:33,772 - __main__.Teacher - DEBUG - Processing 27/4914: 1611.08194v1
+2026-03-24 00:50:33,772 - __main__.Teacher - DEBUG - Article: id=1611.08194v1, title_len=30, abstract_len=1336
+2026-03-24 00:50:33,772 - __main__.Teacher - DEBUG - Prepared messages for 1611.08194v1. System length: 1491, user length: 1408
+2026-03-24 00:50:46,493 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:50:46,493 - __main__.Teacher - DEBUG - Stats. Curr: 557 + 300 = 857 (0.00028196000000000004), total_in_tokens: 13198, total_out_tokens: 7615, total_cost: 0.0068937400000000015
+2026-03-24 00:50:46,496 - __main__.Teacher - DEBUG - Processing 28/4914: 1309.0489v3
+2026-03-24 00:50:46,496 - __main__.Teacher - DEBUG - Article: id=1309.0489v3, title_len=58, abstract_len=1361
+2026-03-24 00:50:46,496 - __main__.Teacher - DEBUG - Prepared messages for 1309.0489v3. System length: 1491, user length: 1461
+2026-03-24 00:50:59,743 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:50:59,743 - __main__.Teacher - DEBUG - Stats. Curr: 557 + 300 = 857 (0.00028196000000000004), total_in_tokens: 13755, total_out_tokens: 7915, total_cost: 0.007175700000000002
+2026-03-24 00:50:59,745 - __main__.Teacher - INFO - Saved checkpoint for 2 articles (26:28)
+2026-03-24 00:50:59,746 - __main__.Teacher - DEBUG - Processing 29/4914: 1311.2460v2
+2026-03-24 00:50:59,746 - __main__.Teacher - DEBUG - Article: id=1311.2460v2, title_len=27, abstract_len=1312
+2026-03-24 00:50:59,746 - __main__.Teacher - DEBUG - Prepared messages for 1311.2460v2. System length: 1491, user length: 1381
+2026-03-24 00:51:08,660 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:51:08,660 - __main__.Teacher - DEBUG - Stats. Curr: 563 + 187 = 750 (0.00023618), total_in_tokens: 14318, total_out_tokens: 8102, total_cost: 0.007411880000000002
+2026-03-24 00:51:08,662 - __main__.Teacher - DEBUG - Processing 30/4914: 1708.05963v1
+2026-03-24 00:51:08,662 - __main__.Teacher - DEBUG - Article: id=1708.05963v1, title_len=49, abstract_len=638
+2026-03-24 00:51:08,662 - __main__.Teacher - DEBUG - Prepared messages for 1708.05963v1. System length: 1491, user length: 729
+2026-03-24 00:51:21,526 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:51:21,527 - __main__.Teacher - DEBUG - Stats. Curr: 429 + 300 = 729 (0.00024612), total_in_tokens: 14747, total_out_tokens: 8402, total_cost: 0.007658000000000002
+2026-03-24 00:51:21,528 - __main__.Teacher - INFO - Saved checkpoint for 2 articles (28:30)
+2026-03-24 00:51:21,529 - __main__.Teacher - DEBUG - Processing 31/4914: 1207.4138v1
+2026-03-24 00:51:21,529 - __main__.Teacher - DEBUG - Article: id=1207.4138v1, title_len=22, abstract_len=1451
+2026-03-24 00:51:21,529 - __main__.Teacher - DEBUG - Prepared messages for 1207.4138v1. System length: 1491, user length: 1515
+2026-03-24 00:51:33,648 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:51:33,648 - __main__.Teacher - DEBUG - Stats. Curr: 584 + 292 = 876 (0.00028616000000000004), total_in_tokens: 15331, total_out_tokens: 8694, total_cost: 0.007944160000000002
+2026-03-24 00:51:33,650 - __main__.Teacher - DEBUG - Processing 32/4914: 1611.04766v1
+2026-03-24 00:51:33,650 - __main__.Teacher - DEBUG - Article: id=1611.04766v1, title_len=34, abstract_len=934
+2026-03-24 00:51:33,650 - __main__.Teacher - DEBUG - Prepared messages for 1611.04766v1. System length: 1491, user length: 1010
+2026-03-24 00:51:46,173 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:51:46,173 - __main__.Teacher - DEBUG - Stats. Curr: 479 + 300 = 779 (0.00026012), total_in_tokens: 15810, total_out_tokens: 8994, total_cost: 0.008204280000000003
+2026-03-24 00:51:46,176 - __main__.Teacher - INFO - Saved checkpoint for 2 articles (30:32)
+2026-03-24 00:51:46,176 - __main__.Teacher - DEBUG - Processing 33/4914: 1602.02355v5
+2026-03-24 00:51:46,177 - __main__.Teacher - DEBUG - Article: id=1602.02355v5, title_len=53, abstract_len=909
+2026-03-24 00:51:46,177 - __main__.Teacher - DEBUG - Prepared messages for 1602.02355v5. System length: 1491, user length: 1004
+2026-03-24 00:51:59,399 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:51:59,399 - __main__.Teacher - DEBUG - Stats. Curr: 464 + 300 = 764 (0.00025592000000000003), total_in_tokens: 16274, total_out_tokens: 9294, total_cost: 0.008460200000000003
+2026-03-24 00:51:59,401 - __main__.Teacher - DEBUG - Processing 34/4914: 1402.2333v1
+2026-03-24 00:51:59,401 - __main__.Teacher - DEBUG - Article: id=1402.2333v1, title_len=87, abstract_len=1220
+2026-03-24 00:51:59,401 - __main__.Teacher - DEBUG - Prepared messages for 1402.2333v1. System length: 1491, user length: 1349
+2026-03-24 00:52:09,613 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:52:09,613 - __main__.Teacher - DEBUG - Stats. Curr: 531 + 230 = 761 (0.00024528), total_in_tokens: 16805, total_out_tokens: 9524, total_cost: 0.008705480000000003
+2026-03-24 00:52:09,615 - __main__.Teacher - INFO - Saved checkpoint for 2 articles (32:34)
+2026-03-24 00:52:09,616 - __main__.Teacher - DEBUG - Processing 35/4914: 1207.4110v1
+2026-03-24 00:52:09,616 - __main__.Teacher - DEBUG - Article: id=1207.4110v1, title_len=61, abstract_len=913
+2026-03-24 00:52:09,616 - __main__.Teacher - DEBUG - Prepared messages for 1207.4110v1. System length: 1491, user length: 1016
+2026-03-24 00:52:21,575 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:52:21,575 - __main__.Teacher - DEBUG - Stats. Curr: 471 + 295 = 766 (0.00025578000000000005), total_in_tokens: 17276, total_out_tokens: 9819, total_cost: 0.008961260000000004
+2026-03-24 00:52:21,577 - __main__.Teacher - DEBUG - Processing 36/4914: 1611.01702v2
+2026-03-24 00:52:21,577 - __main__.Teacher - DEBUG - Article: id=1611.01702v2, title_len=72, abstract_len=1413
+2026-03-24 00:52:21,577 - __main__.Teacher - DEBUG - Prepared messages for 1611.01702v2. System length: 1491, user length: 1527
+2026-03-24 00:52:32,687 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:52:32,688 - __main__.Teacher - DEBUG - Stats. Curr: 605 + 247 = 852 (0.00027314), total_in_tokens: 17881, total_out_tokens: 10066, total_cost: 0.009234400000000004
+2026-03-24 00:52:32,689 - __main__.Teacher - INFO - Saved checkpoint for 2 articles (34:36)
+2026-03-24 00:52:32,690 - __main__.Teacher - DEBUG - Processing 37/4914: 1802.06895v1
+2026-03-24 00:52:32,690 - __main__.Teacher - DEBUG - Article: id=1802.06895v1, title_len=83, abstract_len=858
+2026-03-24 00:52:32,690 - __main__.Teacher - DEBUG - Prepared messages for 1802.06895v1. System length: 1491, user length: 983
+2026-03-24 00:52:41,156 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:52:41,156 - __main__.Teacher - DEBUG - Stats. Curr: 463 + 201 = 664 (0.00021406), total_in_tokens: 18344, total_out_tokens: 10267, total_cost: 0.009448460000000004
+2026-03-24 00:52:41,158 - __main__.Teacher - DEBUG - Processing 38/4914: 1803.06316v2
+2026-03-24 00:52:41,158 - __main__.Teacher - DEBUG - Article: id=1803.06316v2, title_len=59, abstract_len=734
+2026-03-24 00:52:41,158 - __main__.Teacher - DEBUG - Prepared messages for 1803.06316v2. System length: 1491, user length: 835
+2026-03-24 00:52:53,817 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:52:53,817 - __main__.Teacher - DEBUG - Stats. Curr: 449 + 300 = 749 (0.00025172000000000004), total_in_tokens: 18793, total_out_tokens: 10567, total_cost: 0.009700180000000004
+2026-03-24 00:52:53,819 - __main__.Teacher - INFO - Saved checkpoint for 2 articles (36:38)
+2026-03-24 00:52:53,820 - __main__.Teacher - DEBUG - Processing 39/4914: 1703.04197v2
+2026-03-24 00:52:53,820 - __main__.Teacher - DEBUG - Article: id=1703.04197v2, title_len=93, abstract_len=1140
+2026-03-24 00:52:53,820 - __main__.Teacher - DEBUG - Prepared messages for 1703.04197v2. System length: 1491, user length: 1275
+2026-03-24 00:53:05,934 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:53:05,934 - __main__.Teacher - DEBUG - Stats. Curr: 531 + 282 = 813 (0.00026712000000000003), total_in_tokens: 19324, total_out_tokens: 10849, total_cost: 0.009967300000000005
+2026-03-24 00:53:05,936 - __main__.Teacher - DEBUG - Processing 40/4914: 1309.7698v1
+2026-03-24 00:53:05,936 - __main__.Teacher - DEBUG - Article: id=1309.7698v1, title_len=70, abstract_len=367
+2026-03-24 00:53:05,936 - __main__.Teacher - DEBUG - Prepared messages for 1309.7698v1. System length: 1491, user length: 479
+2026-03-24 00:53:18,583 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:53:18,583 - __main__.Teacher - DEBUG - Stats. Curr: 383 + 300 = 683 (0.00023324), total_in_tokens: 19707, total_out_tokens: 11149, total_cost: 0.010200540000000004
+2026-03-24 00:53:18,585 - __main__.Teacher - INFO - Saved checkpoint for 2 articles (38:40)
+2026-03-24 00:53:18,585 - __main__.Teacher - DEBUG - Processing 41/4914: 1707.06017v1
+2026-03-24 00:53:18,585 - __main__.Teacher - DEBUG - Article: id=1707.06017v1, title_len=95, abstract_len=1143
+2026-03-24 00:53:18,585 - __main__.Teacher - DEBUG - Prepared messages for 1707.06017v1. System length: 1491, user length: 1280
+2026-03-24 00:53:31,590 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:53:31,591 - __main__.Teacher - DEBUG - Stats. Curr: 532 + 300 = 832 (0.00027496000000000004), total_in_tokens: 20239, total_out_tokens: 11449, total_cost: 0.010475500000000004
+2026-03-24 00:53:31,593 - __main__.Teacher - DEBUG - Processing 42/4914: 1509.02223v2
+2026-03-24 00:53:31,593 - __main__.Teacher - DEBUG - Article: id=1509.02223v2, title_len=56, abstract_len=698
+2026-03-24 00:53:31,593 - __main__.Teacher - DEBUG - Prepared messages for 1509.02223v2. System length: 1491, user length: 796
+2026-03-24 00:53:42,361 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:53:42,361 - __main__.Teacher - DEBUG - Stats. Curr: 440 + 238 = 678 (0.00022316000000000003), total_in_tokens: 20679, total_out_tokens: 11687, total_cost: 0.010698660000000004
+2026-03-24 00:53:42,363 - __main__.Teacher - INFO - Saved checkpoint for 2 articles (40:42)
+2026-03-24 00:53:42,364 - __main__.Teacher - DEBUG - Processing 43/4914: 1609.08752v1
+2026-03-24 00:53:42,364 - __main__.Teacher - DEBUG - Article: id=1609.08752v1, title_len=54, abstract_len=1094
+2026-03-24 00:53:42,364 - __main__.Teacher - DEBUG - Prepared messages for 1609.08752v1. System length: 1491, user length: 1190
+2026-03-24 00:53:54,734 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:53:54,734 - __main__.Teacher - DEBUG - Stats. Curr: 496 + 296 = 792 (0.00026320000000000006), total_in_tokens: 21175, total_out_tokens: 11983, total_cost: 0.010961860000000004
+2026-03-24 00:53:54,736 - __main__.Teacher - DEBUG - Processing 44/4914: 1410.7762v1
+2026-03-24 00:53:54,737 - __main__.Teacher - DEBUG - Article: id=1410.7762v1, title_len=47, abstract_len=1199
+2026-03-24 00:53:54,737 - __main__.Teacher - DEBUG - Prepared messages for 1410.7762v1. System length: 1491, user length: 1288
+2026-03-24 00:54:03,712 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:54:03,713 - __main__.Teacher - DEBUG - Stats. Curr: 535 + 168 = 703 (0.00022036), total_in_tokens: 21710, total_out_tokens: 12151, total_cost: 0.011182220000000003
+2026-03-24 00:54:03,715 - __main__.Teacher - INFO - Saved checkpoint for 2 articles (42:44)
+2026-03-24 00:54:03,715 - __main__.Teacher - DEBUG - Processing 45/4914: 1505.00566v1
+2026-03-24 00:54:03,715 - __main__.Teacher - DEBUG - Article: id=1505.00566v1, title_len=62, abstract_len=1035
+2026-03-24 00:54:03,715 - __main__.Teacher - DEBUG - Prepared messages for 1505.00566v1. System length: 1491, user length: 1139
+2026-03-24 00:54:17,296 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:54:17,297 - __main__.Teacher - DEBUG - Stats. Curr: 550 + 294 = 844 (0.00027748000000000003), total_in_tokens: 22260, total_out_tokens: 12445, total_cost: 0.011459700000000003
+2026-03-24 00:54:17,299 - __main__.Teacher - DEBUG - Processing 46/4914: 1710.09160v1
+2026-03-24 00:54:17,299 - __main__.Teacher - DEBUG - Article: id=1710.09160v1, title_len=115, abstract_len=1055
+2026-03-24 00:54:17,299 - __main__.Teacher - DEBUG - Prepared messages for 1710.09160v1. System length: 1491, user length: 1212
+2026-03-24 00:54:29,503 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:54:29,503 - __main__.Teacher - DEBUG - Stats. Curr: 500 + 300 = 800 (0.000266), total_in_tokens: 22760, total_out_tokens: 12745, total_cost: 0.011725700000000004
+2026-03-24 00:54:29,506 - __main__.Teacher - INFO - Saved checkpoint for 2 articles (44:46)
+2026-03-24 00:54:29,507 - __main__.Teacher - DEBUG - Processing 47/4914: 1710.03748v3
+2026-03-24 00:54:29,507 - __main__.Teacher - DEBUG - Article: id=1710.03748v3, title_len=47, abstract_len=1139
+2026-03-24 00:54:29,507 - __main__.Teacher - DEBUG - Prepared messages for 1710.03748v3. System length: 1491, user length: 1228
+2026-03-24 00:54:39,468 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:54:39,468 - __main__.Teacher - DEBUG - Stats. Curr: 521 + 219 = 740 (0.00023786), total_in_tokens: 23281, total_out_tokens: 12964, total_cost: 0.011963560000000003
+2026-03-24 00:54:39,470 - __main__.Teacher - DEBUG - Processing 48/4914: 1302.3219v1
+2026-03-24 00:54:39,470 - __main__.Teacher - DEBUG - Article: id=1302.3219v1, title_len=54, abstract_len=1598
+2026-03-24 00:54:39,470 - __main__.Teacher - DEBUG - Prepared messages for 1302.3219v1. System length: 1491, user length: 1694
+2026-03-24 00:54:52,027 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:54:52,027 - __main__.Teacher - DEBUG - Stats. Curr: 622 + 300 = 922 (0.00030016), total_in_tokens: 23903, total_out_tokens: 13264, total_cost: 0.012263720000000004
+2026-03-24 00:54:52,029 - __main__.Teacher - INFO - Saved checkpoint for 2 articles (46:48)
+2026-03-24 00:54:52,029 - __main__.Teacher - DEBUG - Processing 49/4914: 0704.1274v1
+2026-03-24 00:54:52,029 - __main__.Teacher - DEBUG - Article: id=0704.1274v1, title_len=48, abstract_len=1340
+2026-03-24 00:54:52,029 - __main__.Teacher - DEBUG - Prepared messages for 0704.1274v1. System length: 1491, user length: 1430
+2026-03-24 00:55:04,400 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:55:04,400 - __main__.Teacher - DEBUG - Stats. Curr: 565 + 300 = 865 (0.0002842), total_in_tokens: 24468, total_out_tokens: 13564, total_cost: 0.012547920000000004
+2026-03-24 00:55:04,403 - __main__.Teacher - DEBUG - Processing 50/4914: 1702.06899v1
+2026-03-24 00:55:04,403 - __main__.Teacher - DEBUG - Article: id=1702.06899v1, title_len=43, abstract_len=625
+2026-03-24 00:55:04,403 - __main__.Teacher - DEBUG - Prepared messages for 1702.06899v1. System length: 1491, user length: 710
+2026-03-24 00:55:16,977 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:55:16,978 - __main__.Teacher - DEBUG - Stats. Curr: 437 + 300 = 737 (0.00024836), total_in_tokens: 24905, total_out_tokens: 13864, total_cost: 0.012796280000000004
+2026-03-24 00:55:16,980 - __main__.Teacher - INFO - Saved checkpoint for 2 articles (48:50)
+2026-03-24 00:55:16,981 - __main__.Teacher - DEBUG - Processing 51/4914: 1801.03149v2
+2026-03-24 00:55:16,981 - __main__.Teacher - DEBUG - Article: id=1801.03149v2, title_len=107, abstract_len=511
+2026-03-24 00:55:16,981 - __main__.Teacher - DEBUG - Prepared messages for 1801.03149v2. System length: 1491, user length: 660
+2026-03-24 00:55:28,575 - __main__.Teacher - DEBUG - Response received, choices=2
+2026-03-24 00:55:28,575 - __main__.Teacher - DEBUG - Stats. Curr: 408 + 286 = 694 (0.00023436000000000003), total_in_tokens: 25313, total_out_tokens: 14150, total_cost: 0.013030640000000003
+2026-03-24 00:55:28,577 - __main__.Teacher - DEBUG - Processing 52/4914: 1705.01346v1
+2026-03-24 00:55:28,577 - __main__.Teacher - DEBUG - Article: id=1705.01346v1, title_len=57, abstract_len=771
+2026-03-24 00:55:28,577 - __main__.Teacher - DEBUG - Prepared messages for 1705.01346v1. System length: 1491, user length: 870
+2026-03-24 00:55:50,168 - __main__.Teacher - INFO - ======================= New session =======================
+2026-03-24 00:55:50,168 - __main__.Teacher - INFO - Teacher initialized with model='deepseek-chat', temp=0.7, n=2
+2026-03-24 00:57:32,896 - __main__.Teacher - INFO - ======================= New session =======================
+2026-03-24 00:57:32,896 - __main__.Teacher - INFO - Teacher initialized with model='deepseek-chat', temp=0.7, n=2
+2026-03-24 01:03:07,903 - __main__.Teacher - INFO - Starting processing articles from index 50
+2026-03-24 01:05:07,103 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (50:60). Total cost: 0.0026257
+2026-03-24 01:07:03,458 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (50:60). Total cost: 0.005175380000000001
+2026-03-24 01:08:58,842 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (50:60). Total cost: 0.007764960000000002
+2026-03-24 01:10:53,344 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (50:60). Total cost: 0.010256680000000002
+2026-03-24 01:12:43,775 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (50:60). Total cost: 0.012858160000000004
+2026-03-24 01:14:33,005 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (50:60). Total cost: 0.015393140000000003
+2026-03-24 01:16:23,595 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (50:60). Total cost: 0.017956120000000002
+2026-03-24 01:18:14,982 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (50:60). Total cost: 0.020416339999999998
+2026-03-24 01:20:12,936 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (50:60). Total cost: 0.023059120000000002
+2026-03-24 01:22:00,587 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (50:60). Total cost: 0.025650100000000002
+2026-03-24 01:22:14,361 - __main__.Teacher - INFO - Starting processing articles from index 140
+2026-03-24 01:24:05,248 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (140:150). Total cost: 0.028298200000000006
+2026-03-24 01:26:00,612 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (140:150). Total cost: 0.030939580000000005
+2026-03-24 01:27:47,461 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (140:150). Total cost: 0.03346924
+2026-03-24 01:29:13,207 - __main__.Teacher - INFO - ======================= New session =======================
+2026-03-24 01:29:13,207 - __main__.Teacher - INFO - Teacher initialized with model='deepseek-chat', temp=0.7, n=2
+2026-03-24 01:29:17,356 - __main__.Teacher - INFO - Starting processing articles from index 170
+2026-03-24 01:31:12,530 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (170:180). Total cost: 0.0025975599999999996
+2026-03-24 01:33:00,170 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (180:180). Total cost: 0.005087879999999999
+2026-03-24 01:34:49,465 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (190:180). Total cost: 0.007729959999999998
+2026-03-24 01:36:38,932 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (200:180). Total cost: 0.01017366
+2026-03-24 01:37:33,697 - __main__.Teacher - INFO - ======================= New model =======================
+2026-03-24 01:37:33,697 - __main__.Teacher - INFO - Teacher initialized with model='deepseek-chat', temp=0.7, n=2
+2026-03-24 01:37:37,245 - __main__.Teacher - INFO - Starting processing articles from index 210
+2026-03-24 01:37:37,246 - __main__.Teacher - INFO - ======================= New session =======================
+2026-03-24 01:37:48,925 - __main__.Teacher - INFO - ======================= New session =======================
+2026-03-24 01:37:59,670 - __main__.Teacher - INFO - ======================= New session =======================
+2026-03-24 01:38:10,924 - __main__.Teacher - INFO - ======================= New session =======================
+2026-03-24 01:38:22,546 - __main__.Teacher - INFO - ======================= New session =======================
+2026-03-24 01:38:32,591 - __main__.Teacher - INFO - ======================= New session =======================
+2026-03-24 01:38:42,880 - __main__.Teacher - INFO - ======================= New session =======================
+2026-03-24 01:38:52,850 - __main__.Teacher - INFO - ======================= New session =======================
+2026-03-24 01:39:03,573 - __main__.Teacher - INFO - ======================= New session =======================
+2026-03-24 01:39:13,903 - __main__.Teacher - INFO - ======================= New session =======================
+2026-03-24 01:39:23,820 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (210:220). Total cost: 0.0024896199999999997
+2026-03-24 01:39:23,821 - __main__.Teacher - INFO - ======================= New session =======================
+2026-03-24 01:39:35,634 - __main__.Teacher - INFO - ======================= New session =======================
+2026-03-24 01:39:48,027 - __main__.Teacher - INFO - ======================= New session =======================
+2026-03-24 01:39:51,601 - __main__.Teacher - INFO - ======================= New model =======================
+2026-03-24 01:39:51,601 - __main__.Teacher - INFO - Teacher initialized with model='deepseek-chat', temp=0.7, n=2
+2026-03-24 01:39:52,641 - __main__.Teacher - INFO - ======================= New session =======================
+2026-03-24 01:39:52,641 - __main__.Teacher - INFO - Starting processing articles from index 210
+2026-03-24 01:40:03,841 - __main__.Teacher - INFO - ======================= New session =======================
+2026-03-24 01:40:03,841 - __main__.Teacher - INFO - Starting processing articles from index 220
+2026-03-24 01:40:09,977 - __main__.Teacher - INFO - ======================= New model =======================
+2026-03-24 01:40:09,977 - __main__.Teacher - INFO - Teacher initialized with model='deepseek-chat', temp=0.7, n=2
+2026-03-24 01:40:11,612 - __main__.Teacher - INFO - ======================= New session =======================
+2026-03-24 01:40:11,612 - __main__.Teacher - INFO - Starting processing articles from index 220
+2026-03-24 01:41:54,130 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (220:230). Total cost: 0.00247058
+2026-03-24 01:43:40,753 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (230:240). Total cost: 0.00498806
+2026-03-24 01:45:21,575 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (240:250). Total cost: 0.00752528
+2026-03-24 01:47:09,372 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (250:260). Total cost: 0.01018332
+2026-03-24 01:48:57,158 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (260:270). Total cost: 0.012718439999999998
+2026-03-24 01:50:43,896 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (270:280). Total cost: 0.015391599999999997
+2026-03-24 01:52:29,970 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (280:290). Total cost: 0.018034379999999996
+2026-03-24 01:54:04,359 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (290:300). Total cost: 0.020622699999999994
+2026-03-24 01:55:44,112 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (300:310). Total cost: 0.023142699999999995
+2026-03-24 01:57:30,216 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (310:320). Total cost: 0.025705819999999987
+2026-03-24 01:59:13,592 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (320:330). Total cost: 0.02821069999999999
+2026-03-24 02:01:02,844 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (330:340). Total cost: 0.030768079999999993
+2026-03-24 02:02:43,027 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (340:350). Total cost: 0.03327659999999998
+2026-03-24 02:04:24,123 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (350:360). Total cost: 0.03575949999999998
+2026-03-24 02:06:09,414 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (360:370). Total cost: 0.038304419999999985
+2026-03-24 02:07:54,224 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (370:380). Total cost: 0.04083855999999998
+2026-03-24 02:09:36,634 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (380:390). Total cost: 0.043376199999999976
+2026-03-24 02:11:20,219 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (390:400). Total cost: 0.04592965999999998
+2026-03-24 02:13:03,909 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (400:410). Total cost: 0.04843495999999999
+2026-03-24 02:14:46,199 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (410:420). Total cost: 0.05084716
+2026-03-24 02:15:43,971 - __main__.Teacher - INFO - ======================= New model =======================
+2026-03-24 02:15:43,971 - __main__.Teacher - INFO - Teacher initialized with model='deepseek-chat', temp=0.8, n=2
+2026-03-24 02:15:46,965 - __main__.Teacher - INFO - ======================= New session =======================
+2026-03-24 02:15:46,965 - __main__.Teacher - INFO - Starting processing articles from index 420
+2026-03-24 02:17:18,508 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (420:430). Total cost: 0.0024596600000000002
+2026-03-24 02:18:51,192 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (430:440). Total cost: 0.005012980000000001
+2026-03-24 02:20:26,326 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (440:450). Total cost: 0.00762958
+2026-03-24 02:22:01,033 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (450:460). Total cost: 0.01018556
+2026-03-24 02:23:37,287 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (460:470). Total cost: 0.012747139999999997
+2026-03-24 02:25:16,060 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (470:480). Total cost: 0.015256499999999997
+2026-03-24 02:27:03,030 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (480:490). Total cost: 0.01779624
+2026-03-24 02:28:45,810 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (490:500). Total cost: 0.020299160000000004
+2026-03-24 02:30:29,694 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (500:510). Total cost: 0.022786120000000007
+2026-03-24 02:32:18,150 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (510:520). Total cost: 0.025324320000000008
+2026-03-24 02:33:57,166 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (520:530). Total cost: 0.027843900000000008
+2026-03-24 02:35:38,982 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (530:540). Total cost: 0.03027836000000001
+2026-03-24 02:37:22,448 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (540:550). Total cost: 0.03274740000000001
+2026-03-24 02:39:10,297 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (550:560). Total cost: 0.03539592000000001
+2026-03-24 02:40:54,976 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (560:570). Total cost: 0.03796702000000001
+2026-03-24 02:42:42,718 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (570:580). Total cost: 0.04067350000000001
+2026-03-24 02:44:17,656 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (580:590). Total cost: 0.04317026000000001
+2026-03-24 02:45:47,480 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (590:600). Total cost: 0.04557784
+2026-03-24 02:47:21,792 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (600:610). Total cost: 0.048177080000000004
+2026-03-24 02:48:49,573 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (610:620). Total cost: 0.050693999999999996
+2026-03-24 02:50:20,356 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (620:630). Total cost: 0.05311166
+2026-03-24 02:51:55,124 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (630:640). Total cost: 0.05565056
+2026-03-24 02:53:35,592 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (640:650). Total cost: 0.05823118000000001
+2026-03-24 02:55:07,634 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (650:660). Total cost: 0.060753000000000015
+2026-03-24 02:56:40,385 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (660:670). Total cost: 0.06329036000000002
+2026-03-24 02:58:16,405 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (670:680). Total cost: 0.06582982000000001
+2026-03-24 02:59:44,333 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (680:690). Total cost: 0.06831902000000001
+2026-03-24 03:01:29,343 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (690:700). Total cost: 0.0709002
+2026-03-24 03:03:12,579 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (700:710). Total cost: 0.07348726
+2026-03-24 03:04:57,991 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (710:720). Total cost: 0.07608817999999999
+2026-03-24 03:06:41,920 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (720:730). Total cost: 0.07853552000000001
+2026-03-24 03:08:24,206 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (730:740). Total cost: 0.08111796000000003
+2026-03-24 03:10:05,404 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (740:750). Total cost: 0.08362564000000006
+2026-03-24 03:11:52,310 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (750:760). Total cost: 0.08633436000000005
+2026-03-24 03:13:27,168 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (760:770). Total cost: 0.08891400000000005
+2026-03-24 03:14:57,955 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (770:780). Total cost: 0.09147068000000005
+2026-03-24 03:16:29,246 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (780:790). Total cost: 0.09403898000000006
+2026-03-24 03:18:03,437 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (790:800). Total cost: 0.09662142000000007
+2026-03-24 03:19:38,703 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (800:810). Total cost: 0.09926966000000008
+2026-03-24 03:21:06,313 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (810:820). Total cost: 0.10175872000000007
+2026-03-24 03:22:37,651 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (820:830). Total cost: 0.1042657000000001
+2026-03-24 03:24:08,933 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (830:840). Total cost: 0.1068583600000001
+2026-03-24 03:25:46,562 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (840:850). Total cost: 0.10966004000000011
+2026-03-24 03:27:16,275 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (850:860). Total cost: 0.11213104000000013
+2026-03-24 03:28:48,298 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (860:870). Total cost: 0.11474442000000014
+2026-03-24 03:30:21,855 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (870:880). Total cost: 0.11729536000000015
+2026-03-24 03:31:59,625 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (880:890). Total cost: 0.11991546000000017
+2026-03-24 03:33:29,377 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (890:900). Total cost: 0.1223877200000002
+2026-03-24 03:34:58,729 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (900:910). Total cost: 0.12492592000000022
+2026-03-24 03:36:31,008 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (910:920). Total cost: 0.1273987400000002
+2026-03-24 03:37:58,201 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (920:930). Total cost: 0.12984146000000021
+2026-03-24 03:39:29,336 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (930:940). Total cost: 0.1325084600000002
+2026-03-24 03:40:59,088 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (940:950). Total cost: 0.13508110000000018
+2026-03-24 03:42:27,185 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (950:960). Total cost: 0.13763596000000014
+2026-03-24 03:43:58,273 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (960:970). Total cost: 0.14019376000000014
+2026-03-24 03:45:23,006 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (970:980). Total cost: 0.14264180000000015
+2026-03-24 03:46:54,864 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (980:990). Total cost: 0.14525826000000017
+2026-03-24 03:48:12,698 - __main__.Teacher - INFO - Processing 1000/4914: 1711.03179v1
+2026-03-24 03:48:21,933 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (990:1000). Total cost: 0.14770826000000017
+2026-03-24 03:49:48,588 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1000:1010). Total cost: 0.15022574000000016
+2026-03-24 03:51:19,190 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1010:1020). Total cost: 0.15290310000000015
+2026-03-24 03:52:47,638 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1020:1030). Total cost: 0.15545936000000016
+2026-03-24 03:54:15,446 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1030:1040). Total cost: 0.15807862000000017
+2026-03-24 03:55:48,855 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1040:1050). Total cost: 0.16071510000000017
+2026-03-24 03:57:17,214 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1050:1060). Total cost: 0.16321676000000018
+2026-03-24 03:58:50,549 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1060:1070). Total cost: 0.1658536600000002
+2026-03-24 04:00:22,435 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1070:1080). Total cost: 0.16840894000000023
+2026-03-24 04:01:55,019 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1080:1090). Total cost: 0.17092824000000023
+2026-03-24 04:03:25,857 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1090:1100). Total cost: 0.17345538000000021
+2026-03-24 04:04:58,190 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1100:1110). Total cost: 0.1760647000000002
+2026-03-24 04:06:32,010 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1110:1120). Total cost: 0.1786233400000002
+2026-03-24 04:07:56,380 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1120:1130). Total cost: 0.1812682200000002
+2026-03-24 04:09:22,228 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1130:1140). Total cost: 0.18382630000000016
+2026-03-24 04:10:52,193 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1140:1150). Total cost: 0.18645704000000018
+2026-03-24 04:12:23,285 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1150:1160). Total cost: 0.18906398000000016
+2026-03-24 04:13:50,040 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1160:1170). Total cost: 0.1915377800000002
+2026-03-24 04:15:19,608 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1170:1180). Total cost: 0.19409782000000028
+2026-03-24 04:16:50,873 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1180:1190). Total cost: 0.19676272000000028
+2026-03-24 04:18:21,164 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1190:1200). Total cost: 0.1993124000000003
+2026-03-24 04:19:46,628 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1200:1210). Total cost: 0.2017740200000003
+2026-03-24 04:21:18,326 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1210:1220). Total cost: 0.2044317800000003
+2026-03-24 04:22:45,865 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1220:1230). Total cost: 0.2069408600000003
+2026-03-24 04:24:15,003 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1230:1240). Total cost: 0.20952246000000035
+2026-03-24 04:25:42,543 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1240:1250). Total cost: 0.21205478000000036
+2026-03-24 04:27:12,136 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1250:1260). Total cost: 0.21459914000000038
+2026-03-24 04:28:38,028 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1260:1270). Total cost: 0.21705292000000037
+2026-03-24 04:30:06,644 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1270:1280). Total cost: 0.21960890000000036
+2026-03-24 04:31:39,279 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1280:1290). Total cost: 0.22224972000000037
+2026-03-24 04:33:08,603 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1290:1300). Total cost: 0.22469538000000036
+2026-03-24 04:34:41,389 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1300:1310). Total cost: 0.22729532000000036
+2026-03-24 04:36:10,497 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1310:1320). Total cost: 0.22979950000000035
+2026-03-24 04:37:40,225 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1320:1330). Total cost: 0.23240546000000034
+2026-03-24 04:39:12,088 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1330:1340). Total cost: 0.23495626000000033
+2026-03-24 04:40:54,656 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1340:1350). Total cost: 0.23757286000000036
+2026-03-24 04:42:35,693 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1350:1360). Total cost: 0.24020682000000035
+2026-03-24 04:44:04,629 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1360:1370). Total cost: 0.2426526200000004
+2026-03-24 04:45:40,224 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1370:1380). Total cost: 0.24532634000000045
+2026-03-24 04:47:07,784 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1380:1390). Total cost: 0.24775926000000048
+2026-03-24 04:48:38,352 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1390:1400). Total cost: 0.2503825800000005
+2026-03-24 04:50:04,047 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1400:1410). Total cost: 0.25287822000000054
+2026-03-24 04:51:31,672 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1410:1420). Total cost: 0.2553499200000006
+2026-03-24 04:53:01,472 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1420:1430). Total cost: 0.25786474000000065
+2026-03-24 04:54:32,426 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1430:1440). Total cost: 0.26042072000000055
+2026-03-24 04:56:05,031 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1440:1450). Total cost: 0.2629741800000006
+2026-03-24 04:57:33,381 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1450:1460). Total cost: 0.2654387400000007
+2026-03-24 04:58:59,812 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1460:1470). Total cost: 0.2679321400000006
+2026-03-24 05:00:30,255 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1470:1480). Total cost: 0.2704716000000005
+2026-03-24 05:02:09,164 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1480:1490). Total cost: 0.27311298000000045
+2026-03-24 05:03:41,747 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1490:1500). Total cost: 0.2757379800000005
+2026-03-24 05:05:14,758 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1500:1510). Total cost: 0.27828192000000046
+2026-03-24 05:06:41,682 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1510:1520). Total cost: 0.28085512000000057
+2026-03-24 05:08:07,285 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1520:1530). Total cost: 0.2832860800000006
+2026-03-24 05:09:35,223 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1530:1540). Total cost: 0.2858886800000006
+2026-03-24 05:11:04,802 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1540:1550). Total cost: 0.28848120000000066
+2026-03-24 05:12:35,340 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1550:1560). Total cost: 0.29101688000000064
+2026-03-24 05:14:03,746 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1560:1570). Total cost: 0.2936032400000007
+2026-03-24 05:15:30,908 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1570:1580). Total cost: 0.2961250600000007
+2026-03-24 05:16:58,546 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1580:1590). Total cost: 0.29868972000000077
+2026-03-24 05:18:26,348 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1590:1600). Total cost: 0.30127272000000077
+2026-03-24 05:19:56,402 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1600:1610). Total cost: 0.30389086000000076
+2026-03-24 05:21:22,339 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1610:1620). Total cost: 0.30642192000000074
+2026-03-24 05:22:50,272 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1620:1630). Total cost: 0.30900352000000075
+2026-03-24 05:24:20,674 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1630:1640). Total cost: 0.31150238000000074
+2026-03-24 05:25:48,463 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1640:1650). Total cost: 0.3140517800000007
+2026-03-24 05:27:15,409 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1650:1660). Total cost: 0.3165467200000008
+2026-03-24 05:28:44,928 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1660:1670). Total cost: 0.3190688200000008
+2026-03-24 05:30:16,063 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1670:1680). Total cost: 0.32165308000000076
+2026-03-24 05:31:47,649 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1680:1690). Total cost: 0.3242432200000007
+2026-03-24 05:33:19,936 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1690:1700). Total cost: 0.32678184000000077
+2026-03-24 05:34:50,358 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1700:1710). Total cost: 0.32927706000000073
+2026-03-24 05:36:26,670 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1710:1720). Total cost: 0.3319878800000007
+2026-03-24 05:37:58,341 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1720:1730). Total cost: 0.33453602000000066
+2026-03-24 05:39:29,642 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1730:1740). Total cost: 0.3370610600000006
+2026-03-24 05:40:58,501 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1740:1750). Total cost: 0.33951414000000063
+2026-03-24 05:42:31,702 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1750:1760). Total cost: 0.3420499600000006
+2026-03-24 05:43:58,555 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1760:1770). Total cost: 0.3445082200000006
+2026-03-24 05:45:31,432 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1770:1780). Total cost: 0.3471484800000006
+2026-03-24 05:47:00,991 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1780:1790). Total cost: 0.3496518200000006
+2026-03-24 05:48:29,302 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1790:1800). Total cost: 0.3521112000000007
+2026-03-24 05:49:59,257 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1800:1810). Total cost: 0.3547195400000007
+2026-03-24 05:51:30,412 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1810:1820). Total cost: 0.3573095400000007
+2026-03-24 05:53:01,017 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1820:1830). Total cost: 0.3598249200000007
+2026-03-24 05:54:28,446 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1830:1840). Total cost: 0.3623744600000006
+2026-03-24 05:55:54,492 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1840:1850). Total cost: 0.36478932000000064
+2026-03-24 05:57:25,330 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1850:1860). Total cost: 0.3673279400000007
+2026-03-24 05:58:49,453 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1860:1870). Total cost: 0.36985186000000075
+2026-03-24 06:00:18,764 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1870:1880). Total cost: 0.37241512000000077
+2026-03-24 06:01:50,536 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1880:1890). Total cost: 0.37505552000000075
+2026-03-24 06:03:22,105 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1890:1900). Total cost: 0.37766106000000077
+2026-03-24 06:04:56,772 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1900:1910). Total cost: 0.3802794800000007
+2026-03-24 06:06:25,145 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1910:1920). Total cost: 0.38281754000000073
+2026-03-24 06:07:55,448 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1920:1930). Total cost: 0.38538318000000077
+2026-03-24 06:09:21,693 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1930:1940). Total cost: 0.3879013600000008
+2026-03-24 06:10:54,066 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1940:1950). Total cost: 0.3904664400000008
+2026-03-24 06:12:22,445 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1950:1960). Total cost: 0.3930000200000008
+2026-03-24 06:13:51,860 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1960:1970). Total cost: 0.39554942000000076
+2026-03-24 06:15:17,639 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1970:1980). Total cost: 0.3980694200000007
+2026-03-24 06:16:48,514 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1980:1990). Total cost: 0.40065648000000076
+2026-03-24 06:18:08,553 - __main__.Teacher - INFO - Processing 2000/4914: 1705.10444v2
+2026-03-24 06:18:17,413 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (1990:2000). Total cost: 0.40315464000000084
+2026-03-24 06:19:48,235 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2000:2010). Total cost: 0.4056376800000009
+2026-03-24 06:21:22,008 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2010:2020). Total cost: 0.4081827400000008
+2026-03-24 06:22:50,947 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2020:2030). Total cost: 0.41065878000000083
+2026-03-24 06:24:22,103 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2030:2040). Total cost: 0.4131901200000008
+2026-03-24 06:25:53,550 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2040:2050). Total cost: 0.4157846000000008
+2026-03-24 06:27:22,307 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2050:2060). Total cost: 0.4182949400000008
+2026-03-24 06:28:51,104 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2060:2070). Total cost: 0.4208349600000007
+2026-03-24 06:30:20,264 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2070:2080). Total cost: 0.4233695200000007
+2026-03-24 06:31:49,186 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2080:2090). Total cost: 0.42586586000000076
+2026-03-24 06:33:20,412 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2090:2100). Total cost: 0.42842394000000084
+2026-03-24 06:34:48,115 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2100:2110). Total cost: 0.4308808000000008
+2026-03-24 06:36:20,803 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2110:2120). Total cost: 0.4334029000000008
+2026-03-24 06:37:54,545 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2120:2130). Total cost: 0.4359926200000008
+2026-03-24 06:39:21,116 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2130:2140). Total cost: 0.43848532000000073
+2026-03-24 06:40:53,422 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2140:2150). Total cost: 0.44104060000000084
+2026-03-24 06:42:20,773 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2150:2160). Total cost: 0.4433886800000009
+2026-03-24 06:43:50,504 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2160:2170). Total cost: 0.4459161000000009
+2026-03-24 06:45:22,512 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2170:2180). Total cost: 0.44857274000000097
+2026-03-24 06:46:49,340 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2180:2190). Total cost: 0.45111220000000096
+2026-03-24 06:48:15,433 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2190:2200). Total cost: 0.4535773200000009
+2026-03-24 06:49:37,934 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2200:2210). Total cost: 0.45597076000000103
+2026-03-24 06:51:04,451 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2210:2220). Total cost: 0.4584434400000011
+2026-03-24 06:52:31,548 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2220:2230). Total cost: 0.4610204200000011
+2026-03-24 06:53:59,033 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2230:2240). Total cost: 0.46353146000000106
+2026-03-24 06:55:26,292 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2240:2250). Total cost: 0.46613756000000106
+2026-03-24 06:56:53,401 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2250:2260). Total cost: 0.4687348400000011
+2026-03-24 06:58:22,598 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2260:2270). Total cost: 0.47142032000000106
+2026-03-24 06:59:46,552 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2270:2280). Total cost: 0.47397644000000105
+2026-03-24 07:01:38,550 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2280:2290). Total cost: 0.4764949000000011
+2026-03-24 07:03:14,098 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2290:2300). Total cost: 0.4789745800000011
+2026-03-24 07:04:44,080 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2300:2310). Total cost: 0.4814922000000011
+2026-03-24 07:06:15,838 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2310:2320). Total cost: 0.4840651200000012
+2026-03-24 07:07:48,250 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2320:2330). Total cost: 0.48666002000000114
+2026-03-24 07:09:20,799 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2330:2340). Total cost: 0.4891734400000011
+2026-03-24 07:10:49,682 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2340:2350). Total cost: 0.4917456600000011
+2026-03-24 07:12:27,359 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2350:2360). Total cost: 0.4942872200000011
+2026-03-24 07:14:09,988 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2360:2370). Total cost: 0.496813660000001
+2026-03-24 07:16:02,129 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2370:2380). Total cost: 0.499383360000001
+2026-03-24 07:17:38,052 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2380:2390). Total cost: 0.5019389200000011
+2026-03-24 07:19:10,621 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2390:2400). Total cost: 0.5045168800000012
+2026-03-24 07:20:42,388 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2400:2410). Total cost: 0.5071255000000012
+2026-03-24 07:22:15,524 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2410:2420). Total cost: 0.5098144800000012
+2026-03-24 07:23:48,213 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2420:2430). Total cost: 0.512425900000001
+2026-03-24 07:25:18,656 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2430:2440). Total cost: 0.5150175800000009
+2026-03-24 07:26:53,176 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2440:2450). Total cost: 0.517683460000001
+2026-03-24 07:28:21,913 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2450:2460). Total cost: 0.520144520000001
+2026-03-24 07:29:56,215 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2460:2470). Total cost: 0.5226043200000009
+2026-03-24 07:31:42,582 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2470:2480). Total cost: 0.5252564800000007
+2026-03-24 07:33:16,741 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2480:2490). Total cost: 0.5277791400000006
+2026-03-24 07:34:45,247 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2490:2500). Total cost: 0.5302897600000005
+2026-03-24 07:36:13,742 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2500:2510). Total cost: 0.5327928200000005
+2026-03-24 07:37:40,912 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2510:2520). Total cost: 0.5352510800000004
+2026-03-24 07:39:13,584 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2520:2530). Total cost: 0.5378091600000005
+2026-03-24 07:40:48,597 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2530:2540). Total cost: 0.5404768600000006
+2026-03-24 07:42:21,107 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2540:2550). Total cost: 0.5430320000000006
+2026-03-24 07:43:55,909 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2550:2560). Total cost: 0.5455888200000006
+2026-03-24 07:45:27,781 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2560:2570). Total cost: 0.5481189000000007
+2026-03-24 07:47:10,629 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2570:2580). Total cost: 0.5506929400000008
+2026-03-24 07:48:38,141 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2580:2590). Total cost: 0.5531778000000008
+2026-03-24 07:50:10,354 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2590:2600). Total cost: 0.5557421800000009
+2026-03-24 07:51:43,915 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2600:2610). Total cost: 0.5582977400000009
+2026-03-24 07:53:16,362 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2610:2620). Total cost: 0.5608006600000011
+2026-03-24 07:55:03,741 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2620:2630). Total cost: 0.563374000000001
+2026-03-24 07:56:47,581 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2630:2640). Total cost: 0.5659568600000011
+2026-03-24 07:58:34,659 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2640:2650). Total cost: 0.5685932000000011
+2026-03-24 08:00:36,936 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2650:2660). Total cost: 0.571257400000001
+2026-03-24 08:02:42,402 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2660:2670). Total cost: 0.573931960000001
+2026-03-24 08:04:34,718 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2670:2680). Total cost: 0.5765092200000009
+2026-03-24 08:06:23,324 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2680:2690). Total cost: 0.5791317000000008
+2026-03-24 08:08:08,890 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2690:2700). Total cost: 0.5816298600000008
+2026-03-24 08:09:51,526 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2700:2710). Total cost: 0.5841124800000009
+2026-03-24 08:11:37,654 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2710:2720). Total cost: 0.586548760000001
+2026-03-24 08:13:23,804 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2720:2730). Total cost: 0.5891522000000009
+2026-03-24 08:15:14,994 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2730:2740). Total cost: 0.5917483600000009
+2026-03-24 08:17:07,268 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2740:2750). Total cost: 0.594208580000001
+2026-03-24 08:19:01,837 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2750:2760). Total cost: 0.5967773000000011
+2026-03-24 08:21:03,225 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2760:2770). Total cost: 0.5995018400000011
+2026-03-24 08:22:52,604 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2770:2780). Total cost: 0.6019622000000011
+2026-03-24 08:24:41,581 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2780:2790). Total cost: 0.604417660000001
+2026-03-24 08:26:36,705 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2790:2800). Total cost: 0.607034820000001
+2026-03-24 08:28:28,288 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2800:2810). Total cost: 0.609577360000001
+2026-03-24 08:30:12,876 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2810:2820). Total cost: 0.6121221400000009
+2026-03-24 08:32:04,923 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2820:2830). Total cost: 0.614722500000001
+2026-03-24 08:33:54,902 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2830:2840). Total cost: 0.6172409600000011
+2026-03-24 08:35:44,323 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2840:2850). Total cost: 0.6198067400000011
+2026-03-24 08:37:35,720 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2850:2860). Total cost: 0.6223768600000013
+2026-03-24 08:39:27,315 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2860:2870). Total cost: 0.6250801200000013
+2026-03-24 08:41:17,274 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2870:2880). Total cost: 0.6276846800000014
+2026-03-24 08:43:07,401 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2880:2890). Total cost: 0.6302200800000014
+2026-03-24 08:44:55,751 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2890:2900). Total cost: 0.6326569200000014
+2026-03-24 08:46:50,590 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2900:2910). Total cost: 0.6353305000000015
+2026-03-24 08:48:39,323 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2910:2920). Total cost: 0.6379065000000015
+2026-03-24 08:50:34,366 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2920:2930). Total cost: 0.6405610400000016
+2026-03-24 08:52:23,920 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2930:2940). Total cost: 0.6432330800000017
+2026-03-24 08:54:10,508 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2940:2950). Total cost: 0.6457711400000018
+2026-03-24 08:56:01,708 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2950:2960). Total cost: 0.6482448000000017
+2026-03-24 08:57:50,361 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2960:2970). Total cost: 0.6506579800000017
+2026-03-24 08:59:41,499 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2970:2980). Total cost: 0.6532337000000016
+2026-03-24 09:01:52,121 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2980:2990). Total cost: 0.6558269200000015
+2026-03-24 09:03:33,825 - __main__.Teacher - INFO - Processing 3000/4914: 1712.03878v2
+2026-03-24 09:03:46,049 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (2990:3000). Total cost: 0.6582851800000014
+2026-03-24 09:05:44,394 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3000:3010). Total cost: 0.6609531600000014
+2026-03-24 09:07:39,032 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3010:3020). Total cost: 0.6635963600000013
+2026-03-24 09:09:31,382 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3020:3030). Total cost: 0.6662447400000013
+2026-03-24 09:11:31,246 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3030:3040). Total cost: 0.6689167800000013
+2026-03-24 09:13:29,871 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3040:3050). Total cost: 0.6715408000000013
+2026-03-24 09:15:27,869 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3050:3060). Total cost: 0.6740566000000013
+2026-03-24 09:17:24,954 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3060:3070). Total cost: 0.6765911600000012
+2026-03-24 09:19:23,687 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3070:3080). Total cost: 0.6790628600000012
+2026-03-24 09:21:17,368 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3080:3090). Total cost: 0.6814862600000012
+2026-03-24 09:23:18,161 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3090:3100). Total cost: 0.6840881600000013
+2026-03-24 09:25:19,157 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3100:3110). Total cost: 0.6867161000000013
+2026-03-24 09:27:17,105 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3110:3120). Total cost: 0.6892884600000012
+2026-03-24 09:29:14,699 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3120:3130). Total cost: 0.6918464000000012
+2026-03-24 09:31:18,285 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3130:3140). Total cost: 0.6944200200000014
+2026-03-24 09:33:19,076 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3140:3150). Total cost: 0.6969795000000014
+2026-03-24 09:35:22,489 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3150:3160). Total cost: 0.6995436000000014
+2026-03-24 09:37:22,702 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3160:3170). Total cost: 0.7021292600000015
+2026-03-24 09:39:22,944 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3170:3180). Total cost: 0.7046872000000015
+2026-03-24 09:41:18,134 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3180:3190). Total cost: 0.7071409800000016
+2026-03-24 09:43:15,484 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3190:3200). Total cost: 0.7096831000000019
+2026-03-24 09:45:22,138 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3200:3210). Total cost: 0.712317200000002
+2026-03-24 09:47:29,017 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3210:3220). Total cost: 0.7149265200000018
+2026-03-24 09:49:27,174 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3220:3230). Total cost: 0.7175474600000017
+2026-03-24 09:51:31,444 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3230:3240). Total cost: 0.7201882800000017
+2026-03-24 09:53:32,701 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3240:3250). Total cost: 0.7226998800000016
+2026-03-24 09:55:32,125 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3250:3260). Total cost: 0.7252295400000016
+2026-03-24 09:57:34,350 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3260:3270). Total cost: 0.7278583200000015
+2026-03-24 09:59:34,338 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3270:3280). Total cost: 0.7303294600000017
+2026-03-24 10:01:41,622 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3280:3290). Total cost: 0.7330085000000018
+2026-03-24 10:03:43,411 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3290:3300). Total cost: 0.7355583200000019
+2026-03-24 10:05:53,426 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3300:3310). Total cost: 0.7381487400000019
+2026-03-24 10:07:57,846 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3310:3320). Total cost: 0.7406747600000019
+2026-03-24 10:09:54,299 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3320:3330). Total cost: 0.743093260000002
+2026-03-24 10:11:54,988 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3330:3340). Total cost: 0.7456370600000021
+2026-03-24 10:13:58,009 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3340:3350). Total cost: 0.7481248600000021
+2026-03-24 10:16:02,169 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3350:3360). Total cost: 0.750665440000002
+2026-03-24 10:18:01,891 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3360:3370). Total cost: 0.753214560000002
+2026-03-24 10:20:02,989 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3370:3380). Total cost: 0.755799660000002
+2026-03-24 10:22:10,008 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3380:3390). Total cost: 0.7584049200000019
+2026-03-24 10:24:15,581 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3390:3400). Total cost: 0.7609018200000018
+2026-03-24 10:26:28,225 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3400:3410). Total cost: 0.7635126800000018
+2026-03-24 10:28:37,130 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3410:3420). Total cost: 0.7660709000000019
+2026-03-24 10:30:41,736 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3420:3430). Total cost: 0.7686883400000019
+2026-03-24 10:32:52,365 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3430:3440). Total cost: 0.7712616800000018
+2026-03-24 10:35:02,698 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3440:3450). Total cost: 0.773812480000002
+2026-03-24 10:37:10,899 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3450:3460). Total cost: 0.776479620000002
+2026-03-24 10:39:11,488 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3460:3470). Total cost: 0.778992060000002
+2026-03-24 10:41:11,903 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3470:3480). Total cost: 0.7815990000000019
+2026-03-24 10:43:21,755 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3480:3490). Total cost: 0.7842493400000019
+2026-03-24 10:45:23,766 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3490:3500). Total cost: 0.786806160000002
+2026-03-24 10:47:26,876 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3500:3510). Total cost: 0.789298860000002
+2026-03-24 10:49:33,300 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3510:3520). Total cost: 0.791862960000002
+2026-03-24 10:51:41,594 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3520:3530). Total cost: 0.7944813800000019
+2026-03-24 10:53:46,454 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3530:3540). Total cost: 0.7971167400000019
+2026-03-24 10:55:50,791 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3540:3550). Total cost: 0.7997357200000019
+2026-03-24 10:57:44,144 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3550:3560). Total cost: 0.8021447000000019
+2026-03-24 10:59:40,253 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3560:3570). Total cost: 0.8047975600000019
+2026-03-24 11:01:47,912 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3570:3580). Total cost: 0.8073765000000019
+2026-03-24 11:03:57,567 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3580:3590). Total cost: 0.8100006600000017
+2026-03-24 11:06:02,332 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3590:3600). Total cost: 0.8126237000000018
+2026-03-24 11:07:58,155 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3600:3610). Total cost: 0.8151075800000019
+2026-03-24 11:09:57,969 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3610:3620). Total cost: 0.8176110600000018
+2026-03-24 11:12:01,160 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3620:3630). Total cost: 0.820108660000002
+2026-03-24 11:13:57,361 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3630:3640). Total cost: 0.822551240000002
+2026-03-24 11:15:57,977 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3640:3650). Total cost: 0.825196260000002
+2026-03-24 11:17:49,498 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3650:3660). Total cost: 0.827728020000002
+2026-03-24 11:19:50,128 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3660:3670). Total cost: 0.830284000000002
+2026-03-24 11:21:37,257 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3670:3680). Total cost: 0.832858320000002
+2026-03-24 11:23:27,333 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3680:3690). Total cost: 0.8353560600000022
+2026-03-24 11:25:15,698 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3690:3700). Total cost: 0.837957120000002
+2026-03-24 11:27:10,729 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3700:3710). Total cost: 0.8405398400000019
+2026-03-24 11:29:01,573 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3710:3720). Total cost: 0.843064880000002
+2026-03-24 11:30:57,741 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3720:3730). Total cost: 0.8456431200000021
+2026-03-24 11:32:48,068 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3730:3740). Total cost: 0.8482255600000019
+2026-03-24 11:34:42,540 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3740:3750). Total cost: 0.850816120000002
+2026-03-24 11:36:43,295 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3750:3760). Total cost: 0.8533863800000019
+2026-03-24 11:38:35,406 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3760:3770). Total cost: 0.8558095000000019
+2026-03-24 11:40:27,709 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3770:3780). Total cost: 0.858285540000002
+2026-03-24 11:42:19,208 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3780:3790). Total cost: 0.8609435800000022
+2026-03-24 11:44:15,924 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3790:3800). Total cost: 0.8634987200000022
+2026-03-24 11:46:06,298 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3800:3810). Total cost: 0.865998420000002
+2026-03-24 11:47:53,134 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3810:3820). Total cost: 0.8684622800000021
+2026-03-24 11:49:47,289 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3820:3830). Total cost: 0.8709705200000021
+2026-03-24 11:51:42,766 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3830:3840). Total cost: 0.8735483400000021
+2026-03-24 11:53:33,872 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3840:3850). Total cost: 0.8761352600000022
+2026-03-24 11:55:27,116 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3850:3860). Total cost: 0.8786628200000021
+2026-03-24 11:57:18,719 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3860:3870). Total cost: 0.8812370000000019
+2026-03-24 11:59:06,270 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3870:3880). Total cost: 0.883839040000002
+2026-03-24 12:01:04,579 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3880:3890). Total cost: 0.8864087400000019
+2026-03-24 12:02:59,895 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3890:3900). Total cost: 0.8890280000000018
+2026-03-24 12:04:52,985 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3900:3910). Total cost: 0.8915527600000017
+2026-03-24 12:06:46,619 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3910:3920). Total cost: 0.8941017400000018
+2026-03-24 12:08:47,676 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3920:3930). Total cost: 0.8966906200000018
+2026-03-24 12:10:53,390 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3930:3940). Total cost: 0.8992858000000019
+2026-03-24 12:12:52,890 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3940:3950). Total cost: 0.9019061800000019
+2026-03-24 12:14:49,687 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3950:3960). Total cost: 0.9043984600000019
+2026-03-24 12:16:52,155 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3960:3970). Total cost: 0.9069482800000018
+2026-03-24 12:18:55,019 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3970:3980). Total cost: 0.9095682400000018
+2026-03-24 12:20:56,756 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3980:3990). Total cost: 0.9122064000000019
+2026-03-24 12:22:36,438 - __main__.Teacher - INFO - Processing 4000/4914: 1702.03525v2
+2026-03-24 12:22:46,813 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (3990:4000). Total cost: 0.9144990400000019
+2026-03-24 12:24:46,384 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4000:4010). Total cost: 0.9171639400000019
+2026-03-24 12:26:46,820 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4010:4020). Total cost: 0.919734200000002
+2026-03-24 12:28:38,778 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4020:4030). Total cost: 0.9221510200000019
+2026-03-24 12:30:31,707 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4030:4040). Total cost: 0.9246777400000018
+2026-03-24 12:32:28,486 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4040:4050). Total cost: 0.9272040400000017
+2026-03-24 12:34:22,852 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4050:4060). Total cost: 0.9296772800000015
+2026-03-24 12:36:16,159 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4060:4070). Total cost: 0.9320753400000016
+2026-03-24 12:38:12,500 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4070:4080). Total cost: 0.9345894600000016
+2026-03-24 12:40:06,737 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4080:4090). Total cost: 0.9371642000000017
+2026-03-24 12:42:09,179 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4090:4100). Total cost: 0.9396937200000017
+2026-03-24 12:44:04,958 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4100:4110). Total cost: 0.9422354200000017
+2026-03-24 12:46:03,235 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4110:4120). Total cost: 0.9447711000000016
+2026-03-24 12:48:02,736 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4120:4130). Total cost: 0.9473571800000017
+2026-03-24 12:50:09,297 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4130:4140). Total cost: 0.9498763400000017
+2026-03-24 12:52:03,083 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4140:4150). Total cost: 0.9523575600000016
+2026-03-24 12:54:07,643 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4150:4160). Total cost: 0.9549184400000018
+2026-03-24 12:56:10,967 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4160:4170). Total cost: 0.9574223400000018
+2026-03-24 12:58:14,995 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4170:4180). Total cost: 0.9600263400000018
+2026-03-24 13:00:21,888 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4180:4190). Total cost: 0.9625764400000016
+2026-03-24 13:02:37,769 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4190:4200). Total cost: 0.9652566000000018
+2026-03-24 13:04:43,408 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4200:4210). Total cost: 0.9678356800000016
+2026-03-24 13:06:54,211 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4210:4220). Total cost: 0.9704154600000016
+2026-03-24 13:08:56,612 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4220:4230). Total cost: 0.9729433000000016
+2026-03-24 13:11:02,132 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4230:4240). Total cost: 0.9755331600000017
+2026-03-24 13:13:06,111 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4240:4250). Total cost: 0.9780454600000016
+2026-03-24 13:15:16,296 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4250:4260). Total cost: 0.9806860000000016
+2026-03-24 13:17:21,695 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4260:4270). Total cost: 0.9831607800000015
+2026-03-24 13:19:29,582 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4270:4280). Total cost: 0.9857979600000014
+2026-03-24 13:21:39,988 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4280:4290). Total cost: 0.9882950000000014
+2026-03-24 13:23:46,159 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4290:4300). Total cost: 0.9907874200000014
+2026-03-24 13:25:56,696 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4300:4310). Total cost: 0.9933746200000014
+2026-03-24 13:28:08,315 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4310:4320). Total cost: 0.9960545000000012
+2026-03-24 13:30:18,105 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4320:4330). Total cost: 0.9986246200000011
+2026-03-24 13:32:33,539 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4330:4340). Total cost: 1.0012144800000011
+2026-03-24 13:34:39,499 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4340:4350). Total cost: 1.0037694800000012
+2026-03-24 13:36:46,681 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4350:4360). Total cost: 1.0063555600000014
+2026-03-24 13:38:45,668 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4360:4370). Total cost: 1.0088478400000012
+2026-03-24 13:40:54,066 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4370:4380). Total cost: 1.011442460000001
+2026-03-24 13:43:05,119 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4380:4390). Total cost: 1.0141126800000013
+2026-03-24 13:45:14,092 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4390:4400). Total cost: 1.0167179400000015
+2026-03-24 13:47:20,931 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4400:4410). Total cost: 1.0192617400000012
+2026-03-24 13:49:24,560 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4410:4420). Total cost: 1.021879460000001
+2026-03-24 13:51:27,416 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4420:4430). Total cost: 1.024431100000001
+2026-03-24 13:53:27,685 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4430:4440). Total cost: 1.0268728400000011
+2026-03-24 13:55:37,829 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4440:4450). Total cost: 1.0294468800000012
+2026-03-24 13:57:37,526 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4450:4460). Total cost: 1.031992080000001
+2026-03-24 13:59:49,948 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4460:4470). Total cost: 1.034670000000001
+2026-03-24 14:01:58,009 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4470:4480). Total cost: 1.0370980200000013
+2026-03-24 14:04:12,232 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4480:4490). Total cost: 1.0396661800000015
+2026-03-24 14:06:31,248 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4490:4500). Total cost: 1.0422820800000017
+2026-03-24 14:08:49,602 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4500:4510). Total cost: 1.0449224800000019
+2026-03-24 14:11:04,307 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4510:4520). Total cost: 1.0474164400000021
+2026-03-24 14:13:18,620 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4520:4530). Total cost: 1.0499861400000021
+2026-03-24 14:15:37,228 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4530:4540). Total cost: 1.052513140000002
+2026-03-24 14:17:50,838 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4540:4550). Total cost: 1.0550849400000022
+2026-03-24 14:20:04,601 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4550:4560). Total cost: 1.057617260000002
+2026-03-24 14:22:15,615 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4560:4570). Total cost: 1.0601673600000023
+2026-03-24 14:24:30,845 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4570:4580). Total cost: 1.062829740000002
+2026-03-24 14:26:48,544 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4580:4590). Total cost: 1.065394540000002
+2026-03-24 14:29:00,883 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4590:4600). Total cost: 1.0679617200000018
+2026-03-24 14:31:19,894 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4600:4610). Total cost: 1.0704327200000014
+2026-03-24 14:33:42,238 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4610:4620). Total cost: 1.0730606600000012
+2026-03-24 14:35:55,548 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4620:4630). Total cost: 1.075522420000001
+2026-03-24 14:38:10,267 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4630:4640). Total cost: 1.078017640000001
+2026-03-24 14:40:17,189 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4640:4650). Total cost: 1.080627100000001
+2026-03-24 14:42:22,044 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4650:4660). Total cost: 1.0831175600000011
+2026-03-24 14:44:34,672 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4660:4670). Total cost: 1.085758520000001
+2026-03-24 14:46:39,469 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4670:4680). Total cost: 1.0883132400000008
+2026-03-24 14:48:42,165 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4680:4690). Total cost: 1.0908193800000006
+2026-03-24 14:50:40,805 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4690:4700). Total cost: 1.093339660000001
+2026-03-24 14:52:40,337 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4700:4710). Total cost: 1.095759980000001
+2026-03-24 14:54:34,618 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4710:4720). Total cost: 1.0981973800000013
+2026-03-24 14:56:34,640 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4720:4730). Total cost: 1.1007315200000012
+2026-03-24 14:58:32,671 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4730:4740). Total cost: 1.1032064400000012
+2026-03-24 15:00:35,851 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4740:4750). Total cost: 1.1057554200000013
+2026-03-24 15:02:36,887 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4750:4760). Total cost: 1.1081667800000012
+2026-03-24 15:04:44,756 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4760:4770). Total cost: 1.1107787600000012
+2026-03-24 15:06:47,153 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4770:4780). Total cost: 1.1132744000000012
+2026-03-24 15:08:50,692 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4780:4790). Total cost: 1.115929360000001
+2026-03-24 15:10:58,156 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4790:4800). Total cost: 1.118520900000001
+2026-03-24 15:12:57,455 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4800:4810). Total cost: 1.121040900000001
+2026-03-24 15:14:55,446 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4810:4820). Total cost: 1.1236135400000007
+2026-03-24 15:16:59,270 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4820:4830). Total cost: 1.1261457200000005
+2026-03-24 15:19:03,333 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4830:4840). Total cost: 1.1287165400000005
+2026-03-24 15:21:03,265 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4840:4850). Total cost: 1.1312432600000004
+2026-03-24 15:23:08,814 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4850:4860). Total cost: 1.1338894000000004
+2026-03-24 15:25:19,977 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4860:4870). Total cost: 1.1363619400000002
+2026-03-24 15:27:32,636 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4870:4880). Total cost: 1.1389071400000006
+2026-03-24 15:29:48,179 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4880:4890). Total cost: 1.1413950800000006
+2026-03-24 15:32:06,741 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4890:4900). Total cost: 1.1439076600000007
+2026-03-24 15:34:26,879 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4900:4910). Total cost: 1.1465967800000005
+2026-03-24 15:35:21,651 - __main__.Teacher - INFO - Saving final checkpoint.
+2026-03-24 15:35:21,652 - __main__.Teacher - INFO - Saved checkpoint for 4 articles (4910:4914). Total cost: 1.1476208800000007
+2026-03-24 15:35:21,652 - __main__.Teacher - INFO - Completed. Processed 4494 / 4914 articles
+2026-03-24 15:35:21,653 - __main__.Teacher - INFO - Saved dataset to ../dataset/train1/prompts.tsv
+2026-03-24 15:35:21,659 - __main__.Teacher - INFO - ======================= New session =======================
+2026-03-24 15:35:21,660 - __main__.Teacher - INFO - Starting processing articles from index 0
+2026-03-24 15:37:35,035 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4494:4504). Total cost: 1.1501168000000006
+2026-03-24 15:39:55,442 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4504:4514). Total cost: 1.1526775400000004
+2026-03-24 15:42:16,627 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4514:4524). Total cost: 1.1552499000000003
+2026-03-24 15:44:35,504 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4524:4534). Total cost: 1.15782072
+2026-03-24 15:46:47,215 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4534:4544). Total cost: 1.1602865399999998
+2026-03-24 15:49:01,252 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4544:4554). Total cost: 1.1628324399999994
+2026-03-24 15:51:14,856 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4554:4564). Total cost: 1.1653430599999994
+2026-03-24 15:53:30,448 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4564:4574). Total cost: 1.1679579799999995
+2026-03-24 15:55:33,601 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4574:4584). Total cost: 1.1703649999999997
+2026-03-24 15:57:50,878 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4584:4594). Total cost: 1.1729715199999995
+2026-03-24 15:59:57,248 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4594:4604). Total cost: 1.1755098599999994
+2026-03-24 16:02:14,346 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4604:4614). Total cost: 1.1781327599999993
+2026-03-24 16:04:28,248 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4614:4624). Total cost: 1.1807256999999993
+2026-03-24 16:06:42,160 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4624:4634). Total cost: 1.183312059999999
+2026-03-24 16:08:49,085 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4634:4644). Total cost: 1.1859184399999994
+2026-03-24 16:10:52,658 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4644:4654). Total cost: 1.188492899999999
+2026-03-24 16:13:01,171 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4654:4664). Total cost: 1.1910166799999993
+2026-03-24 16:15:07,432 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4664:4674). Total cost: 1.1935848399999993
+2026-03-24 16:17:17,934 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4674:4684). Total cost: 1.1961405399999994
+2026-03-24 16:19:26,371 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4684:4694). Total cost: 1.1986799999999993
+2026-03-24 16:21:32,109 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4694:4704). Total cost: 1.2012008399999994
+2026-03-24 16:23:38,293 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4704:4714). Total cost: 1.2037192999999993
+2026-03-24 16:25:43,208 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4714:4724). Total cost: 1.2062208199999995
+2026-03-24 16:27:49,907 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4724:4734). Total cost: 1.2087051199999996
+2026-03-24 16:29:57,685 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4734:4744). Total cost: 1.2113637199999998
+2026-03-24 16:32:14,389 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4744:4754). Total cost: 1.21410142
+2026-03-24 16:34:22,035 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4754:4764). Total cost: 1.2166636999999998
+2026-03-24 16:36:26,216 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4764:4774). Total cost: 1.2191806199999997
+2026-03-24 16:38:36,806 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4774:4784). Total cost: 1.2217629200000002
+2026-03-24 16:40:47,292 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4784:4794). Total cost: 1.22430616
+2026-03-24 16:42:56,613 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4794:4804). Total cost: 1.2268585000000003
+2026-03-24 16:45:02,649 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4804:4814). Total cost: 1.2292537600000004
+2026-03-24 16:47:18,135 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4814:4824). Total cost: 1.2317856600000001
+2026-03-24 16:49:37,991 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4824:4834). Total cost: 1.2343289000000002
+2026-03-24 16:51:58,512 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4834:4844). Total cost: 1.2369063000000005
+2026-03-24 16:54:25,071 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4844:4854). Total cost: 1.2394982600000004
+2026-03-24 16:56:39,648 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4854:4864). Total cost: 1.2420284800000005
+2026-03-24 16:58:54,533 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4864:4874). Total cost: 1.2445031200000005
+2026-03-24 17:01:19,036 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4874:4884). Total cost: 1.2472511800000001
+2026-03-24 17:03:38,590 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4884:4894). Total cost: 1.2498624600000003
+2026-03-24 17:05:59,027 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4894:4904). Total cost: 1.2524365000000002
+2026-03-24 17:08:22,184 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4904:4914). Total cost: 1.2551649599999999
+2026-03-24 17:10:38,867 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4914:4924). Total cost: 1.2577920599999999
+2026-03-24 17:12:54,651 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4924:4934). Total cost: 1.2603723999999998
+2026-03-24 17:15:05,795 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4934:4944). Total cost: 1.2628823199999997
+2026-03-24 17:17:19,311 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4944:4954). Total cost: 1.2653870599999995
+2026-03-24 17:19:30,521 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4954:4964). Total cost: 1.2679454199999993
+2026-03-24 17:21:44,379 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4964:4974). Total cost: 1.2705250599999993
+2026-03-24 17:23:51,641 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4974:4984). Total cost: 1.273108759999999
+2026-03-24 17:26:03,164 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4984:4994). Total cost: 1.2756983399999988
+2026-03-24 17:28:11,729 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (4994:5004). Total cost: 1.278413779999999
+2026-03-24 17:30:18,128 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (5004:5014). Total cost: 1.281055299999999
+2026-03-24 17:32:27,510 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (5014:5024). Total cost: 1.283590139999999
+2026-03-24 17:34:28,439 - __main__.Teacher - INFO - Saved checkpoint for 10 articles (5024:5034). Total cost: 1.286059599999999
+2026-03-24 17:35:41,730 - __main__.Teacher - INFO - Saving final checkpoint.
+2026-03-24 17:35:41,731 - __main__.Teacher - INFO - Saved checkpoint for 6 articles (5034:5040). Total cost: 1.287559279999999
+2026-03-24 17:35:41,731 - __main__.Teacher - INFO - Completed. Processed 5040 / 546 articles
+2026-03-24 17:35:41,732 - __main__.Teacher - INFO - Saved dataset to ../dataset/val1/prompts.tsv

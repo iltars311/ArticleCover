@@ -1,12 +1,12 @@
 # Project special
 /origins/*/
 /dataset/
-/logs*/
 /checkpoint/
 /src/unsloth_compiled_cache
 /src/llama*/
 /src/lora_backup
 /src/outputs
+/checkpoint/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -62,7 +62,6 @@ cover/
 *.pot
 
 # Django stuff:
-*.log
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
@@ -83,7 +82,6 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
-*.ipynb
 */.ipynb_checkpoints/*
 
 # IPython
