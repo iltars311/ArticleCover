@@ -4,15 +4,13 @@ from llama_cpp import Llama
 # Настройка внешнего вида страницы
 st.set_page_config(page_title="Генератор обложек", page_icon="🎨", layout="centered")
 
-# Кэшируем загрузку модели, чтобы не грузить ее в память при каждом клике
 @st.cache_resource
 def load_model():
-    # ВАЖНО: Убедитесь, что имя файла тут совпадает с тем, что вы скачали!
     return Llama(
         model_path="meta-llama-3.1-8b-instruct.Q4_K_M.gguf", 
-        n_ctx=1024,       # Тот самый идеальный контекст
-        n_gpu_layers=-1,  # -1 значит "отдать всю работу видеокарте" (ваша RTX 4060 справится играючи)
-        verbose=False     # Отключаем технический спам в консоли
+        n_ctx=2048,
+        n_gpu_layers=-1,
+        verbose=False
     )
 
 st.title("🎨 Генератор промтов для обложек")
@@ -70,7 +68,7 @@ Abstract:
             response = model(
                 prompt_template,
                 max_tokens=250,      # Лимит длины для генерируемого промта
-                temperature=0.4,     # Легкая креативность, но без галлюцинаций
+                temperature=0.3,     # Легкая креативность, но без галлюцинаций
                 stop=["<|eot_id|>", "</s>"]
             )
             
