@@ -1,16 +1,37 @@
 import streamlit as st
 from PIL import Image, ImageDraw, ImageFont
 import io
-import numpy as np
+import os
+import math
+import textwrap
 from datetime import datetime
+from pathlib import Path
+from dotenv import load_dotenv
 
-# Конфигурация страницы - должна быть первой командой
+# Новые импорты для интеграции вашей логики
+from llama_cpp import Llama
+from huggingface_hub import InferenceClient
+
+# --- Настройка окружения ---
+# __file__ указывает на src/site.py
+# .parent указывает на src/
+# .parent.parent указывает на корень проекта ArticleCover/ (где лежит .env)
+BASE_DIR = Path(__file__).resolve().parent.parent 
+load_dotenv(BASE_DIR / '.env')
+TOKEN = os.getenv('HUGGINGFACE_TOKEN')
+
+# Конфигурация страницы - должна быть первой командой Streamlit
 st.set_page_config(
     page_title="ArticleCover",
     page_icon="📄",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
+
+# Проверка токена с выводом прямо в интерфейс приложения
+if not TOKEN:
+    st.error("🚨 Токен HuggingFace не найден! Убедитесь, что файл .env находится в корне проекта и содержит HUGGINGFACE_TOKEN.")
+    st.stop() # Останавливаем отрисовку страницы, если токена нет
 
 # Кастомный CSS для оранжево-белой темы и фиксации высоты
 st.markdown("""
@@ -50,9 +71,22 @@ st.markdown("""
             background-color: #4E4E4E;
             border-radius: 10px;
             padding: 1rem;
-            height: 80vh;
+            height: 80vh; /* Чуть увеличили стартовую высоту */
             display: flex;
             flex-direction: column;
+            overflow-y: auto; /* <-- Добавили прокрутку внутри колонки */
+        }
+        
+        /* Красивый скроллбар для колонок */
+        .stColumn::-webkit-scrollbar {
+            width: 6px;
+        }
+        .stColumn::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .stColumn::-webkit-scrollbar-thumb {
+            background-color: #FF6B35;
+            border-radius: 10px;
         }
         
         /* Заголовки колонок */
@@ -232,58 +266,162 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Функция для генерации обложки (имитация работы AI)
-def generate_cover(title, abstract, prompt_model, image_model):
+
+# --- ЗАГРУЗКА МОДЕЛЕЙ (кеширование для Streamlit) ---
+@st.cache_resource(show_spinner=False)
+def load_llm():
+    # Измените путь на корректный, если GGUF лежит в другой папке проекта
+    return Llama(
+        model_path="meta-llama-3.1-8b-instruct.Q4_K_M.gguf", 
+        n_ctx=2048,
+        n_gpu_layers=-1,
+        verbose=False
+    )
+
+@st.cache_resource(show_spinner=False)
+def load_hf_client():
+    return InferenceClient(model='black-forest-labs/FLUX.1-schnell', token=TOKEN)
+
+
+# --- ФУНКЦИЯ ПОДГОТОВКИ ПОД A4 ---
+def process_image_to_a4(img, title_text):
     """
-    Генерирует обложку на основе названия и аннотации статьи
-    В реальном приложении здесь должен быть вызов AI моделей
+    Адаптировано для работы напрямую с объектом PIL.Image (вместо чтения с диска),
+    чтобы не создавать мусорных файлов в Streamlit.
     """
-    # Создаем изображение с соотношением сторон 1:sqrt(2) ≈ 1:1.414
-    width = 800
-    height = int(width * 1.414)  # 800x1131
+    img.load()
+        
+    W, H = img.size
+    a4_ratio = math.sqrt(2)
+    target_H = int(W * a4_ratio)
+    strip_H = target_H - H
+
+    if strip_H <= 50: 
+        strip_H = int(W * 0.15) 
+        target_H = H + strip_H 
+
+    background_color = (30, 30, 30)
+    new_img = Image.new("RGB", (W, target_H), background_color)
+    new_img.paste(img, (0, strip_H))
+
+    draw = ImageDraw.Draw(new_img)
+    text_color = (255, 255, 255)
     
-    # Создаем градиентный фон
-    img = Image.new('RGB', (width, height), color='#FF6B35')
-    draw = ImageDraw.Draw(img)
+    text_x = W / 2
+    text_y = strip_H / 2
+
+    font_size = int(strip_H * 0.60)
+    spacing = 15
     
-    # Добавляем оранжевый градиент
-    for i in range(height):
-        color_value = int(255 - (i / height) * 100)
-        draw.rectangle([0, i, width, i+1], fill=(255, int(107 - (i/height)*50), 53))
-    
-    # Пытаемся загрузить шрифт, если нет - используем дефолтный
+    # Пытаемся загрузить шрифт Arial. Если скрипт будет запущен на Linux, 
+    # нужно учесть падение и загрузить дефолтный шрифт.
+    font_path = "C:/Windows/Fonts/arial.ttf"
     try:
-        font_title = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 36)
-        font_text = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 20)
-    except:
-        font_title = ImageFont.load_default()
-        font_text = ImageFont.load_default()
+        font = ImageFont.truetype(font_path, font_size)
+    except IOError:
+        font = ImageFont.load_default()
+
+    # Для FreeType шрифтов считаем длину символа
+    if hasattr(font, 'getlength'):
+        while font_size >= 12:
+            try:
+                font = ImageFont.truetype(font_path, font_size)
+            except IOError:
+                font = ImageFont.load_default()
+
+            char_width = font.getlength("A") if hasattr(font, 'getlength') else 10
+            max_chars_per_line = max(10, int((W * 0.9) / char_width))
+            wrapped_text = textwrap.fill(title_text, width=max_chars_per_line)
+            lines = wrapped_text.split('\n')
+
+            total_height = (len(lines) * font_size) + ((len(lines) - 1) * spacing)
+
+            if total_height <= (strip_H * 0.80):
+                break
+            font_size -= 2
+    else:
+        # Резервный вариант, если truetype-шрифт недоступен (например, на сервере без Arial)
+        max_chars_per_line = max(10, int((W * 0.9) / 10))
+        wrapped_text = textwrap.fill(title_text, width=max_chars_per_line)
+
+    draw.multiline_text(
+        (text_x, text_y),
+        wrapped_text,
+        fill=text_color,
+        font=font,
+        anchor="mm",
+        align="center",
+        spacing=spacing
+    )
     
-    # Добавляем название
-    title_text = title[:50] + "..." if len(title) > 50 else title
-    bbox = draw.textbbox((0, 0), title_text, font=font_title)
-    title_width = bbox[2] - bbox[0]
-    title_x = (width - title_width) // 2
-    draw.text((title_x, height//4), title_text, fill='white', font=font_title)
+    return new_img
+
+
+# --- ОСНОВНАЯ ФУНКЦИЯ ГЕНЕРАЦИИ (интеграция вашей логики) ---
+def generate_cover(title, abstract, prompt_model_name, image_model_name):
+    # 1. Загружаем LLaMA (из кеша Streamlit)
+    llm_model = load_llm()
     
-    # Добавляем абстракт (первые 3 строки)
-    abstract_lines = abstract[:200].split('\n')
-    y_offset = height//2
-    for i, line in enumerate(abstract_lines[:3]):
-        bbox = draw.textbbox((0, 0), line, font=font_text)
-        text_width = bbox[2] - bbox[0]
-        text_x = (width - text_width) // 2
-        draw.text((text_x, y_offset + i*30), line, fill='white', font=font_text)
+    # Формируем prompt для LLaMA на основе аннотации
+    full_input = f"""<|start_header_id|>user<|end_header_id|>
+
+You are a scientific visualization expert and prompt engineer.
+
+Create a prompt for an AI image generator that will produce an accurate and visually compelling cover image for a scientific paper.
+
+CRITICAL RULES:
+- Promts size should be 50-150 tokens
+- Scientific accuracy: Visual elements must correctly represent the scientific concept
+- No fictional or decorative elements that contradict the research
+- Use correct scientific terminology in the prompt
+- Output ONLY the prompt, no extra text
+- Image must be in A4 format (portrait orientation, 1:sqrt(2) aspect ratio). Add this information to prompt.
+
+PROMPT COMPONENTS:
+1. Core scientific concept (what is being shown)
+2. Specific visual details (colors, materials, lighting)
+3. Style appropriate for the journal/conference
+4. Composition and perspective
+
+EXAMPLES:
+
+Article: "Graphene-Based Battery with 10x Capacity"
+Prompt: "Cross-section of graphene layered anode material, lithium ions intercalating between graphene sheets, electron flow visualized as golden energy streams, blue and gray color palette, scientific illustration style, cutaway view, detailed material texture"
+
+Article: "Neural Network Explains Visual Cortex Activity"
+Prompt: "Artificial neural network architecture overlaid on primate visual cortex diagram, activation patterns shown as colored heatmaps, connections between nodes mimicking biological pathways, academic illustration style, split-view showing both AI and biology, cool blue to warm red gradient"
+
+Abstract:
+{abstract}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+"""
+
+    st.toast("Генерация промпта в LLaMA...", icon="🧠")
+    response = llm_model(
+        full_input,
+        max_tokens=250,
+        temperature=0.2,
+        stop=["<|eot_id|>", "</s>"]
+    )
+    generated_prompt = response['choices'][0]['text'].strip()
     
-    # Добавляем декоративные элементы
-    draw.rectangle([50, height-100, width-50, height-70], fill='#FF8C5A', outline='white', width=2)
-    draw.text((width//2 - 100, height-95), "ArticleCover", fill='white', font=font_text)
+    # Выводим сгенерированный промпт в консоль Streamlit для отладки
+    print(f"Generated Image Prompt: {generated_prompt}")
     
-    # Добавляем информацию о моделях
-    draw.text((10, height-30), f"Prompt: {prompt_model}", fill='white', font=font_text)
-    draw.text((width-200, height-30), f"Image: {image_model}", fill='white', font=font_text)
+    # 2. Обращаемся к Hugging Face за картинкой (FLUX)
+    st.toast("Отправка промпта в FLUX...", icon="🎨")
+    client = load_hf_client()
+    try:
+        raw_image = client.text_to_image(generated_prompt)
+    except Exception as e:
+        st.error(f"Ошибка при генерации изображения: {e}")
+        raise e
+
+    # 3. Добавляем полосу A4 с названием сверху
+    st.toast("Применяем формат обложки (A4)...", icon="📐")
+    final_image = process_image_to_a4(raw_image, title)
     
-    return img
+    return final_image
+
 
 # Функция для подготовки изображения к скачиванию
 def prepare_image_for_download(img, format_choice):
@@ -360,7 +498,7 @@ with col2:
     st.markdown("**Image Model**")
     image_model = st.selectbox(
         "Select image generation model",
-        [""],
+        ["black-forest-labs/FLUX.1-schnell"], 
         label_visibility="collapsed",
         key="image_model"
     )
@@ -379,121 +517,52 @@ with col2:
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col3:
-    # Инициализация session state
+    # 1. Инициализация (если еще нет)
     if 'generated_image' not in st.session_state:
         st.session_state.generated_image = None
-    if 'download_format' not in st.session_state:
-        st.session_state.download_format = "PNG"
     
-    # Создаем HTML для заголовка с кнопкой
-    format_options = ["PNG", "JPEG", "WebP"]
-    format_options_html = "".join([
-        f'<option value="{f}" {"selected" if st.session_state.download_format == f else ""}>{f}</option>' 
-        for f in format_options
-    ])
-    
-    # Отображаем заголовок с комбинированной кнопкой через HTML с JavaScript
-    st.markdown(f"""
-        <div class="column-title">
-            <span>🎨 Generated Cover</span>
-            <div class="title-download-area">
-                <button id="download-title-btn" class="title-download-btn" onclick="triggerDownload()">
-                    DOWNLOAD
-                </button>
-                <select id="format-title-select" class="title-format-select" onchange="updateFormatAndButton(this.value)">
-                    {format_options_html}
-                </select>
-            </div>
-        </div>
-        
-        <script>
-            let currentFormat = '{st.session_state.download_format}';
-            
-            function updateFormatAndButton(format) {{
-                currentFormat = format;
-                const btn = document.getElementById('download-title-btn');
-                btn.innerHTML = '💾 DOWNLOAD ' + format;
-                
-                // Сохраняем выбранный формат в sessionStorage
-                sessionStorage.setItem('selectedFormat', format);
-            }}
-            
-            function triggerDownload() {{
-                const format = document.getElementById('format-title-select').value;
-                
-                // Создаем ссылку для скачивания через Streamlit
-                const downloadUrl = `/download?format=${{format}}&timestamp=${{Date.now()}}`;
-                
-                // Сохраняем формат и запускаем скачивание через Streamlit
-                sessionStorage.setItem('downloadTrigger', 'true');
-                sessionStorage.setItem('downloadFormat', format);
-                
-                // Перезагружаем страницу с параметром для скачивания
-                window.location.href = window.location.pathname + '?download=' + format;
-            }}
-            
-            // Восстанавливаем выбранный формат при загрузке страницы
-            document.addEventListener('DOMContentLoaded', function() {{
-                const savedFormat = sessionStorage.getItem('selectedFormat');
-                if (savedFormat) {{
-                    const select = document.getElementById('format-title-select');
-                    if (select) {{
-                        select.value = savedFormat;
-                        updateFormatAndButton(savedFormat);
-                    }}
-                }}
-            }});
-        </script>
-    """, unsafe_allow_html=True)
-    
-    # Обработка скачивания через query parameters
-    import urllib.parse
-    query_params = st.query_params
-    
-    if 'download' in query_params and st.session_state.generated_image is not None:
-        format_to_download = query_params['download']
-        if format_to_download in ["PNG", "JPEG", "WebP"]:
+    # 2. Заголовок (всегда сверху)
+    st.markdown('<div class="column-title">🎨 Generated Cover</div>', unsafe_allow_html=True)
+
+    # 3. Единая логика отображения (ЛИБО картинка, ЛИБО плейсхолдер)
+    if st.session_state.generated_image is not None:
+        # Блок управления скачиванием
+        d_col1, d_col2 = st.columns([0.6, 0.4])
+        with d_col2:
+            fmt = st.selectbox("Format", ["PNG", "JPEG", "WebP"], 
+                               label_visibility="collapsed", key="fmt_selector")
+        with d_col1:
             img_buffer, mime_type, file_ext = prepare_image_for_download(
-                st.session_state.generated_image,
-                format_to_download
+                st.session_state.generated_image, fmt
             )
             st.download_button(
-                label="Download",
+                label=f"💾 DOWNLOAD {fmt}",
                 data=img_buffer,
-                file_name=f"article_cover_{datetime.now().strftime('%Y%m%d_%H%M%S')}.{file_ext}",
+                file_name=f"cover_{datetime.now().strftime('%H%M%S')}.{file_ext}",
                 mime=mime_type,
-                key="download_btn_auto"
+                use_container_width=True
             )
-            # Очищаем параметр после скачивания
-            st.query_params.clear()
-    
-    # Показываем изображение или плейсхолдер
-    if st.session_state.generated_image is not None:
+        
+        # САМА КАРТИНКА (рисуется сразу под кнопкой)
         st.image(st.session_state.generated_image, use_container_width=True)
+        
     else:
-        # Плейсхолдер для изображения
+        # Плейсхолдер (высота минимальна, чтобы не толкать будущую картинку)
         st.markdown("""
-            <div class="image-container">
-                <div style="
-                    border-radius: 10px;
-                    padding: 2rem;
-                    min-height: 584px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                ">
-                    <div style="font-size: 4rem; margin-bottom: 1rem;">🎨</div>
-                    <div style="font-size: 1.2rem; font-weight: bold;">No cover generated yet</div>
-                    <div style="font-size: 0.9rem; margin-top: 0.5rem;">Fill in the article info and click Generate</div>
-                    <div style="font-size: 0.8rem; margin-top: 1rem;">Aspect ratio: 1 : √2</div>
+            <div class="image-container" style="min-height: 100px; margin-top: 0;">
+                <div style="text-align: center; padding: 20px;">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">🎨</div>
+                    <div style="font-size: 1.1rem; font-weight: bold; color: #FF6B35;">Ready to Generate</div>
+                    <div style="font-size: 0.8rem; opacity: 0.7;">Fill the info and click Generate</div>
                 </div>
             </div>
         """, unsafe_allow_html=True)
+
 # Обработка генерации
 if generate_button:
     if title and abstract:
         with st.spinner("Generating cover... 🎨"):
+            # Теперь вызываем нашу "боевую" функцию
             img = generate_cover(title, abstract, prompt_model, image_model)
             st.session_state.generated_image = img
             st.rerun()
