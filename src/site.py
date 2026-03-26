@@ -55,7 +55,7 @@ st.markdown("""
             text-align: center;
             padding: 0 0 0 0;
             border-bottom: 2px solid #FF6B35;
-            margin-bottom: 1rem;
+            margin-bottom: 0.1rem;
         }
         
         .header-logo h1 {
@@ -196,8 +196,10 @@ st.markdown("""
         
         /* Убираем прокрутку для всего приложения */
         .block-container {
-            padding-top: 0rem;
-            padding-bottom: 0rem;
+            padding-top: 3.5rem !important; /* <-- Сдвигает весь сайт вниз на безопасное расстояние */
+            padding-bottom: 0rem !important;
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
             max-width: 100%;
         }
         
@@ -248,7 +250,7 @@ st.markdown("""
         /* Уменьшаем отступы между элементами в средней колонке */
         .centered-content .stButton {
             margin-bottom: 0rem;
-            margin-top: 10rem;
+            margin-top: 1rem;
         }
         
         .centered-content hr {
