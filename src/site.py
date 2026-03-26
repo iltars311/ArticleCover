@@ -11,6 +11,7 @@ from dotenv import load_dotenv
 # Новые импорты для интеграции вашей логики
 from llama_cpp import Llama
 from huggingface_hub import InferenceClient
+from huggingface_hub import hf_hub_download
 
 # --- Настройка окружения ---
 # __file__ указывает на src/site.py
@@ -272,11 +273,25 @@ st.markdown("""
 # --- ЗАГРУЗКА МОДЕЛЕЙ (кеширование для Streamlit) ---
 @st.cache_resource(show_spinner=False)
 def load_llm():
-    # Измените путь на корректный, если GGUF лежит в другой папке проекта
+    model_filename = "meta-llama-3.1-8b-instruct.Q4_K_M.gguf"
+    
+    # Проверяем, есть ли модель локально (для удобства разработки на вашем ПК)
+    if os.path.exists(model_filename):
+        model_path = model_filename
+    else:
+        # Если файла нет (например, при запуске в HF Spaces), скачиваем его
+        st.toast("Первый запуск: скачивание модели LLaMA (5 ГБ)...", icon="⏳")
+        model_path = hf_hub_download(
+            repo_id="iltars13/ArticleCover", # <-- Замените на ваш Model Repo
+            filename=model_filename
+        )
+        
     return Llama(
-        model_path="meta-llama-3.1-8b-instruct.Q4_K_M.gguf", 
+        model_path=model_path, 
         n_ctx=2048,
-        n_gpu_layers=-1,
+        # В бесплатных HF Spaces нет GPU, поэтому llama.cpp будет работать на CPU.
+        # Параметр -1 не вызовет ошибку, он просто будет проигнорирован.
+        n_gpu_layers=-1, 
         verbose=False
     )
 
